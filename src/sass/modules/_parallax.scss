@@ -1,0 +1,117 @@
+.parallax__container {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  padding: 3rem 0 0;
+  @include mq(64em) {
+    padding: 8rem 0 0rem;
+  }
+  &:before,
+  &:after {
+    position: absolute;
+    content: '';
+  }
+
+  &:before {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 65%;
+    background: rgba($white, .85);
+    @include mq(32em) {
+      height: 60%;
+    }
+
+    @include mq(48em) {
+      height: 55%;
+    }
+
+    @include mq(54.688em) {
+      height: 75%;
+    }
+
+  }
+
+  &:after {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 35%;
+    background: rgba($ms-purple-dark, .85);
+    @include mq(32em) {
+      height: 40%;
+    }
+
+    @include mq(48em) {
+      height: 45%;
+    }
+
+    @include mq(54.688em) {
+      height: 25%;
+    }
+
+  }
+  .no-touch & {
+    background-attachment: local;
+  }
+}
+
+.parallax--animate {
+  opacity: 0;
+  overflow: hidden;
+  .parallax--animated & {
+    animation: fadeup $transition-speed * 4 $transition-easing forwards;
+  }
+}
+
+.parallax__header {
+  margin-bottom: 0 !important;
+}
+
+.parallax__container__first {
+  margin-bottom: 5rem;
+  @include mq(64em) {
+    margin-bottom: 12rem;
+  }
+  section {
+    margin-bottom: 0 !important;
+  }
+}
+
+.parallax__container__second {
+  padding: 2rem 0;
+  @include mq(64em) {
+    padding: 0 0 3rem;
+  }
+}
+
+.parallax__button__container {
+  text-align: center;
+  .button {
+    width: 100%;
+    @include mq(64em) {
+      width: auto;
+    }
+  }
+}
+
+.parallax__number,
+.parallax__text {
+  text-align: center;
+  color: $white;
+}
+
+.parallax__number {
+  font: 52px $CamptonBook;
+}
+
+.parallax__text {
+  font: 24px $CamptonBold;
+}
+
+.parallax__container__first,
+.parallax__container__second {
+  position: relative;
+  z-index: 2;
+}

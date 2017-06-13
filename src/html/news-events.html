@@ -1,0 +1,206 @@
+---
+title: News and Events
+---
+
+{% extends "layouts/_default.html" %}
+
+
+{% block content %}
+<main id="main-content" class="content-full" tabindex="0">
+  <div class="page">
+
+    <ul id="breadcrumbs">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Page 1</a></li>
+      <li class="active">Page 2</li>
+    </ul>
+
+    <section>
+      <h1>Latest News</h1>
+
+
+      <div class="news__events__category__container">
+        <nav aria-label="section navigation menu" tabindex="0">
+          <div class="expander expander3">
+            <div class="news__events__category__label">
+              <a href="#">Browse by Category:</a>
+            </div>
+            <ul class="button__tag__group">
+              <li><a href="#" class="button__tag">Alumni</a></li>
+              <li><a href="#" class="button__tag">Students</a></li>
+              <li><a href="#" class="button__tag">Awards and Recognition</a></li>
+              <li><a href="#" class="button__tag">Events</a></li>
+              <li><a href="#" class="button__tag">Faculty</a></li>
+              <li><a href="#" class="button__tag">IMC</a></li>
+              <li><a href="#" class="button__tag">Journalism</a></li>
+              <li><a href="#" class="button__tag">Speaker/Lecture</a></li>
+              <li><a href="#" class="button__tag">All Categories</a></li>
+
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      {% set feed = {horizontal: true, image: true, textLong: true} %}
+      {% include "modules/_feed.html" %}
+    </section>
+
+
+
+  </div>
+
+  <div class="container--gray-light">
+    <div class="page">
+      <div class="wrap wrap--slim">
+        <section class="feed__module">
+          <div class="align-text-center">
+            <h2>More News</h2>
+          </div>
+
+          {% set feed = {events: true, contentSmall: true, image: true, date: true} %}
+          {% include "modules/_feed.html" %}
+          {% include "modules/_feed.html" %}
+          {% include "modules/_feed.html" %}
+          {% set feed = {events: true, contentSmall: true, date: true, textLong: true} %}
+          {% include "modules/_feed.html" %}
+          {% set feed = {events: true, contentSmall: true, image: true, date: true} %}
+          {% include "modules/_feed.html" %}
+          <ul class="pagination">
+            <li><a href="#"><span class="hide-label">paginate left</span><span class="pagination__left--icon">{{ svgstore('arrow-left') }}</span></a></li>
+            <li><a class="pagination__link active" href="#">1</a></li>
+            <li><a class="pagination__link" href="#">2</a></li>
+            <li><a class="pagination__link" href="#">3</a></li>
+            <li><a class="pagination__link" href="#">4</a></li>
+            <li><a href="#"><span class="hide-label">paginate right</span><span class="pagination__right--icon">{{ svgstore('arrow-right') }}</span></a></li>
+          </ul>
+        </section>
+      </div>
+
+    </div>
+
+  </div>
+
+  <section class="background-select">
+    <div class="background-select-image" style="background: url('http://common.northwestern.edu/v8/css/images/purple-slashes-standard.jpg') no-repeat center / cover">
+      <div class="module">
+        <div class="page">
+          <div class="align-text-center">
+            <h3 class="header--white">From the Magazine</h3>
+          </div>
+          <div class="feature-three-col">
+           <article class="feature-box">
+            <div class="feed feed__item--small">
+              <div class="feed__card block__item--animate feature-box--white">
+                <div class="feed__item__img">
+                  <a href="#"><img src="//satyr.io/550x350" alt="placeholder"></a>
+                </div>
+                <div class="feed__card__content">
+                  <h3 class="feed__card__content--title">
+                    <a href="#">Journalism</a>
+                  </h3>
+                  <p>Fall 2016</p>
+                  <div class="feed__item__content--text">
+                    <p>Medill is preparing the next generation of journalists for the best jobs and leadership in media.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="feature-box">
+            <div class="feed feed__item--small">
+              <div class="feed__card block__item--animate feature-box--white">
+                <div class="feed__item__img">
+                  <a href="#"><img src="//satyr.io/550x350" alt="placeholder"></a>
+                </div>
+                <div class="feed__card__content">
+                  <h3 class="feed__card__content--title">
+                    <a href="#">Journalism</a>
+                  </h3>
+                  <p>Fall 2016</p>
+                  <div class="feed__item__content--text">
+                    <p>Medill is preparing the next generation of journalists for the best jobs and leadership in media.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="feature-box">
+            <div class="feed feed__item--small">
+              <div class="feed__card block__item--animate feature-box--white">
+                <div class="feed__item__img">
+                  <a href="#"><img src="//satyr.io/550x350" alt="placeholder"></a>
+                </div>
+                <div class="feed__card__content">
+                  <h3 class="feed__card__content--title">
+                    <a href="#">Journalism</a>
+                  </h3>
+                  <p>Fall 2016</p>
+                  <div class="feed__item__content--text">
+                    <p>Medill is preparing the next generation of journalists for the best jobs and leadership in media.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </div>
+      <div class="align-text-center event__button">
+        <a href="#" class="button button__white">More from the Magazine...</a>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="page">
+  <div class="wrap wrap--slim">
+    <section>
+      <div class="align-text-center">
+        <h3>Upcoming Events</h3>
+      </div>
+      <article class="event">
+        <div class="event-date">
+          <div class="month">June</div>
+          <div class="day">12</div>
+          <div class="year">2016</div>
+        </div>
+        <div class="event-description">
+          <h4><a href="#">Graduate Student IMC Information Session</a></h4>
+          <p class="event-time-location"><strong>Time:</strong> 5:30 PM - 6:30 PM</p>
+          <p class="event-time-location"><strong>Location:</strong> Chicago</p>
+        </div>
+      </article>
+      <article class="event">
+        <div class="event-date">
+          <div class="month">June</div>
+          <div class="day">13</div>
+          <div class="year">2016</div>
+        </div>
+        <div class="event-description">
+          <h4><a href="#">Medill Fridays: Community: Walk the Walk, Talk the Talk, and Eat the Food</a></h4>
+          <p class="event-time-location"><strong>Time:</strong> 5:30 PM - 6:30 PM</p>
+          <p class="event-time-location"><strong>Location:</strong> Chicago</p>
+        </div>
+      </article>
+      <article class="event">
+        <div class="event-date">
+          <div class="month">June</div>
+          <div class="day">18</div>
+          <div class="year">2016</div>
+        </div>
+        <div class="event-description">
+          <h4><a href="#">Medill Fridays: Interactive Discussion at the Knight Lab</a></h4>
+          <p class="event-time-location"><strong>Time:</strong> 5:30 PM - 6:30 PM</p>
+          <p class="event-time-location"><strong>Location:</strong> Chicago</p>
+        </div>
+      </article>
+      <div class="align-text-center event__button">
+        <a href="#" class="button">Medill Calendar</a>
+      </div>
+    </section>
+  </div>
+</div>
+</main>
+
+
+<script type="text/javascript">document.getElementsByTagName('body')[0].setAttribute('class','standard-page wider-page');</script>
+{% endblock %}

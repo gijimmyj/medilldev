@@ -1,0 +1,7 @@
+{% macro svgstore(svg) %}
+  <span class="svgstore svgstore--{{ svg }}">
+    <svg>
+      <use xlink:href="/img/svgstore.svg#{{ svg }}"></use>
+    </svg>
+  </span>
+{% endmacro %}

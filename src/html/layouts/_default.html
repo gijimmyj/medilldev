@@ -1,0 +1,42 @@
+{% from "util/_svgstore.html" import svgstore %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+  <link href="/css/style.css" rel="stylesheet">
+  <!--[if lt IE 9]><script src="//common.northwestern.edu/v8/js/html5shiv-printshiv.js"></script><![endif]-->
+  <title>{{ title }} - Template</title>
+
+</head>
+<body>
+  <a id="top"></a>
+  <a href="#main-content" class="screen-reader-shortcut">Skip to main content</a>
+
+  {% include "modules/_header.html" %}
+
+
+    {% block content %}{% endblock %}
+
+
+  {% include "modules/_footer.html" %}
+
+<!--   <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script> -->
+
+<script>/* Rerun without minification (remove `.min` from URL path) for verbose metadata */
+
+(function(undefined) {function _mutation(e){if(e.length){if(1===e.length)return"string"==typeof e[0]?document.createTextNode(e[0]):e[0];for(var t,n=document.createDocumentFragment(),r=e.length,o=-1;++o<r;)t=e[o],n.appendChild("string"==typeof t?document.createTextNode(t):t);return n}throw new Error("DOM Exception 8")}Document.prototype.remove=Element.prototype.remove=function(){this.parentNode&&this.parentNode.removeChild(this)},"Text"in this&&(Text.prototype.remove=Element.prototype.remove);this.addEventListener("focus",function(e){e.target.dispatchEvent(new Event("focusin",{bubbles:!0,cancelable:!0}))},!0),this.addEventListener("blur",function(e){e.target.dispatchEvent(new Event("focusout",{bubbles:!0,cancelable:!0}))},!0);}).call('object' === typeof window && window || 'object' === typeof self && self || 'object' === typeof global && global || {});
+</script>
+
+    <script src="/js/script.js"></script>
+  {% if map %}
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=false"></script>
+  <script src="/js/map.js"></script>
+  {% endif %}
+
+
+</body>
+</html>

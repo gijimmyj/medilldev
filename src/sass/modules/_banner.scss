@@ -1,0 +1,41 @@
+.banner__container {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  &:before {
+    position: absolute;
+    content: '';
+    background: rgba($black, .5);
+    width: 100%;
+    top: 0;
+    bottom: 0rem;
+  }
+}
+
+.banner__wrap {
+  position: relative;
+  padding-bottom: 125%;
+  @include mq(32em) {
+    padding-bottom: 100%;
+  }
+  @include mq(48em) {
+    padding-bottom: 75%;
+  }
+  @include mq(64em) {
+    padding-bottom: 50%;
+  }
+}
+
+.banner__content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  color: $white;
+  padding: 1rem;
+}
+
+.banner__header {
+  color: $white;
+  text-align: center;
+}

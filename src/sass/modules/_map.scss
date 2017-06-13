@@ -1,0 +1,158 @@
+
+#map-feature {
+  position: relative;
+  @include clear;
+  max-width: 88rem;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -2rem;
+  margin-bottom: 4rem;
+  box-shadow: 0px 0px 63px -13px rgba(0,0,0,0.59);
+}
+#map-feature:after {
+  content: "";
+  display: table;
+  clear: both
+}
+#map-feature #map-canvas {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  height: 450px;
+  background: #444;
+  z-index: 100;
+}
+#map-feature #info-canvas {
+  float: left;
+  width: 50%;
+  height: 450px;
+  background: #444 url("") no-repeat;
+  background-size: cover;
+  z-index: 100;
+  display: table;
+  position: relative;
+  background-position: 50%;
+}
+#map-feature #info-canvas h3 {
+  color: #fff !important;
+  font-family: $CamptonBold;
+  font-size: 30px;
+  line-height: 38px;
+}
+
+#map-feature #info-canvas p {
+  color: #fff;
+  margin-bottom: 1.5em;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.8);
+}
+
+
+#map-feature #info-canvas .button__link {
+  color: #fff !important;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+#map-feature #info-canvas .button__link:before {
+  @include fill($svgstore--arrow-right, $white);
+}
+
+
+#btn-campus {
+  display: none;
+  .button--active & {
+    display: block;
+    position: absolute;
+    left: 50px;
+    bottom: 25px;
+    padding: .5rem 1rem;
+    font: 17px "Akkurat Pro Bold", "Arial Black", sans-serif;
+    color: #fff;
+    background: #836eaa;
+    cursor: pointer;
+    z-index: 120
+  }
+}
+
+
+@media screen and (max-width: 1120px) {
+  #map-feature #map-canvas,
+  #map-feature #info-canvas {
+    width: 50%
+  }
+}
+@media screen and (max-width: 768px) {
+  #map-feature #map-canvas,
+  #map-feature #info-canvas {
+    width: 100%;
+    float: none;
+    display: block;
+    height: inherit;
+    min-height: 300px;
+    background-position: 50%;
+  }
+  #map-feature #btn-campus {
+    top: 15px;
+    bottom: inherit;
+    right: 15px;
+    left: auto;
+  }
+  #map-feature h3 {
+    font-size: 36px
+  }
+  #map-feature .arrow-box {
+    left: 15px;
+    top: 15px;
+    bottom: inherit
+  }
+}
+@media screen and (max-width: 480px) {
+  #map-feature h3 {
+    font-size: 26px
+  }
+}
+
+
+.inner__map__canvas {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 5rem 3rem 3rem;
+  @include mq(48em) {
+    padding: 1rem 3rem;
+  }
+  @include mq(64em) {
+    padding: 0 6rem;
+  }
+}
+
+.map__navigation {
+  top: 0;
+  position: absolute;
+  display: block;
+  width: 100%;
+  left: 0;
+  @include mq(48rem) {
+    top: 45%;
+  }
+}
+
+.map__navigation__previous,
+.map__navigation__next {
+  position: absolute;
+  background-size: 35px 35px;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.map__navigation__previous {
+  left: 0;
+  background: url("#{$path-images}/icons/arrow-right-purple-white.svg") no-repeat;
+  transform: rotate(180deg);
+}
+
+.map__navigation__next {
+  right: 0;
+  background: url("#{$path-images}/icons/arrow-right-purple-white.svg") no-repeat;
+}

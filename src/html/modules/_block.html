@@ -1,0 +1,66 @@
+{% if block.programs %}
+<div class="block">
+  <div class="block__item{% if block.animate %} block__item--animate{% endif %}">
+    <div class="block__item__tag">
+    </div>
+    <div class="block__item__img">
+      <a href="#"><img src="//satyr.io/550x350" alt="placeholder"></a>
+    </div>
+
+    <div class="block__item__content">
+      <div class="block__item__content--name">
+        {{ block.name }}
+      </div>
+      <div class="block__item__content--title">
+        {{ block.title }}
+      </div>
+      <p class="block__item__content--text">
+        {% if block.text == 'Long' %}
+        The IMC part-time program serves working professionals living in or around Chicago and allows them to advance their careers by tapping into the deep expertise of our faculty. Students gain access to a network of other high-caliber marketing professionals in the Chicago area.
+        {% else %}
+        The full-time IMC program is tailored to launch your career in the marketing field with an intensive, five-quarter program that prepares you to solve the marketing problems of the digital age.
+        {% endif %}
+      </p>
+      <a href="#" class="button__link">
+        Visit Program Page
+      </a>
+    </div>
+  </div>
+</div>
+
+{% else %}
+<div class="block">
+  <div class="block__item{% if block.animate %} block__item--animate{% endif %}">
+    <h3 class="block__item__tag">
+      {{ block.tag }}
+    </h3>
+    <div class="block__item__img">
+      <a href="#"><img src="//satyr.io/550x350" alt="placeholder"></a>
+    </div>
+
+    <div class="block__item__content">
+      <div class="block__item__content--name">
+        {{ block.name }}
+      </div>
+      <div class="block__item__content--title">
+        {{ block.title }}
+      </div>
+      <p class="block__item__content--text">
+        {% if block.text == 'Long' %}
+        J.A. Adande has been giving Los Angeles Times readers his view of the sports world for six years, introducing them to everyone from Shaquille O’Neal to the man who operates the centerfield geyser at Edison Field. Other assignments have included the Olympic Games, Wimbledon, the Super Bowl, the NCAA Final Four, and the NBA Finals.
+        {% else %}
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget magna in mauris tempus dapibus. Phasellus ultrices tortor ut imperdiet egestas. In hac habitasse platea dictumst. Praesent sit amet sem libero.
+        {% endif %}
+      </p>
+      <a href="#" class="button__link">
+        {% if block.tag == 'Faculty' %}
+        View Faculty Page
+        {% else %}
+        Read More
+        {% endif %}
+      </a>
+    </div>
+  </div>
+</div>
+
+{% endif %}

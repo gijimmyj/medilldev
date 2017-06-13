@@ -1,0 +1,62 @@
+.sidebar__block {
+  margin: 2rem 0 0;
+  & + & {
+    margin: .25rem 0;
+  }
+  &:last-child {
+    margin-bottom: 2rem;
+  }
+}
+
+
+.sidebar__card {
+  text-align: center;
+  padding: 2rem;
+  background: $ms-gray-light;
+}
+
+.sidebar__card--title {
+  font: 30px/38px $CamptonBold;
+  color: $ms-purple;
+  margin-bottom: 0;
+}
+
+.sidebar__card--text {
+  font: 20px $CamptonBook;
+  color: $ms-gray;
+}
+
+.sidebar__right {
+  @include mq(769px) {
+    margin-left: 21rem;
+  }
+  @include mq(64em) {
+    position: absolute;
+    right: 0;
+  }
+}
+
+.sidebar__button__group {
+  margin-top: 2rem;
+  .button {
+    display: block !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    margin-bottom: .5rem !important;
+  }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.left-nav-control {
+  ul {
+    display: none;
+    @include mq(769px) {
+      display: block;
+    }
+  }
+}

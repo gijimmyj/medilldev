@@ -1,0 +1,237 @@
+.wrap {
+  @include clear;
+  max-width: 80rem;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include mq(48em) {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+
+  @include mq(90em) {
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+}
+
+.wrap--wide {
+  max-width: 96rem;
+}
+
+.wrap--narrow {
+  max-width: 70rem;
+}
+
+.wrap--slim {
+  max-width: 58rem;
+}
+
+.wrap--relative {
+  position: relative;
+}
+
+
+
+// link boxes - grey header with grey line below, optional photo and links
+
+.standard-page {
+
+    // i.e. link boxes for diversity page at bottom
+
+    .two-columns {
+
+        display: flex; // equal height columns
+        flex-wrap: wrap; // wrap child items
+        margin: 0;
+
+        article {
+          width: 400px / 836px * 100%;
+          margin-bottom: 2rem;
+
+          &:nth-child(even) {
+            margin-left: 36px / 836px * 100%;
+          }
+
+          img {
+            margin-bottom: .5rem;
+          }
+
+          h4 {
+            font: 26px $AkkuratProRegular;
+            color: $rich-black-50;
+            margin-bottom: 1rem;
+            padding-bottom: .5rem;
+            border-bottom: 4px solid $medium-grey;
+          }
+
+          p {
+            margin: 0 !important;
+          }
+
+          ul,
+          ol {
+            margin: 0;
+            padding: 0;
+            padding-left: .25rem;
+          }
+        }
+      }
+
+    // media queries
+    @media screen and (max-width: 600px) {
+
+      .two-columns {
+
+        article {
+          float: none;
+          width: 100%;
+
+          &:nth-child(even) {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+
+
+    .feature-two-col {
+        display: flex; // equal height columns
+        flex-wrap: wrap row; // wrap child items
+        @include clear;
+        @include mq($max: 48em) {
+          margin-left: -1rem;
+          margin-right: -1rem;
+        }
+
+        .feature-box {
+          width: 550px / 1120px * 100%;
+          float: left;
+          // background: $light-grey;
+          margin-left: 20px / 1120px * 100%;
+          position: relative;
+
+          &:first-child {
+            margin-left: 0;
+          }
+
+          .feature-copy {
+            padding: 1rem 1.5rem 4rem 1.5rem;
+
+            h4 {
+              font: 21px $AkkuratProRegular;
+              text-transform: uppercase;
+              color: $rich-black-80;
+            }
+
+            ul {
+              margin-left: 0;
+              padding-left: .5em;
+            }
+          }
+
+            &.no-button { // tightens things up when there's no button
+            .feature-copy {
+              padding-bottom: 1rem;
+            }
+          }
+        }
+      }
+
+    // media queries
+    @media screen and (max-width: 768px) {
+
+      .feature-two-col {
+        display: block;
+
+        .feature-box {
+          width: inherit;
+          max-width: 550px;
+          float: none;
+          // background: $light-grey;
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 1rem;
+
+          &:first-child {
+            margin-left: auto;
+          }
+        }
+      }
+    }
+
+}  // end
+
+
+
+
+.page {
+  margin: 2rem auto 0 auto;
+  max-width: 930px;
+  .wider-page & {
+    @include mq(65em) {
+      max-width: 70rem;
+    }
+    @include mq(81em) {
+      max-width: 80rem;
+    }
+    @include mq(100em) {
+      max-width: 90rem;
+    }
+  }
+}
+
+
+.mid-content {
+  margin-bottom: 3rem;
+
+  @include mq(48em) {
+    width: calc(100% - 21rem);
+    float: right;
+
+  }
+  @include mq(64em) {
+    width: calc(100% - 30rem);
+    float: right;
+    margin-right: 10rem;
+    padding-right: 4rem;
+  }
+  ul {
+    padding-left: 0;
+  }
+}
+
+.container--gray-light {
+  background: $ms-gray-light;
+}
+
+.grid {
+  display: flex;
+  flex-flow: row wrap;
+  margin-right: -1rem;
+  margin-left: -1rem;
+
+}
+
+.grid__item {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 0 1rem;
+}
+
+.grid__item--3-2 {
+  @include mq(64em) {
+    float: left;
+    width: 66.666%;
+  }
+}
+
+.grid__item--3 {
+  @include mq(48em) {
+    float: left;
+    width: 33.333%;
+    &:nth-child(3n+1) {
+      clear: both;
+    }
+  }
+}

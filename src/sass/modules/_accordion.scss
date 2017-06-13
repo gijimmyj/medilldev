@@ -1,0 +1,12 @@
+.accordion__title {
+  font: 27px/34px;
+  font-family: $CamptonBook;
+  a {
+    background-image: none;
+    color: $ms-purple;
+    &:hover {
+      text-decoration: underline;
+      background-image: none;
+    }
+  }
+}

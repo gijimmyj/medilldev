@@ -1,0 +1,33 @@
+<div class="media{% if media.narrow %} media--narrow{% endif%}{% if media.full %} media--full{% endif %}{% if media.floatRight %} media--right{% endif %}{% if media.tight %} media--tight{% endif %}">
+  {% if media.play %}
+  {% if media.full %}
+  <a class="media__item" href="https://www.youtube.com/watch?v=G4K4aZT5gaI" data-modal>
+    <img src="//satyr.io/1023x682" alt="placeholder" />
+    <div class="media__overlay">
+      <div class="media__icon">{{ svgstore('play-alt') }}</div>
+      {% if media.overlaytext %}
+      <p class="media__overlay__text">Lorem ipsum dolor sit amet, consectetur.</p>
+      {% endif %}
+    </div>
+  </a>
+  {% else %}
+  <a class="media__item" href="https://players.brightcove.net/713149653001/default_default/index.html?videoId=4722439561001" data-modal>
+    <img src="//satyr.io/735x490" alt="placeholder" />
+    <div class="media__icon">{{ svgstore('play-alt') }}</div>
+  </a>
+  {% endif %}
+  {% else %}
+  <div class="media__item">
+    <img src="//satyr.io/1023x682" alt="placeholder" />
+  </div>
+  {% endif %}
+  {% if media.caption %}
+  <div class="media__text {% if media.pushText %} media__text--push{% endif %}">
+    {% if media.title %}
+    <p class="media__text__title">Image Caption Heading</p>
+    {% endif %}
+    <p class="media__text__caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere placeat amet omnis odio quis voluptas ullam ex quod, dignissimos saepe.</p>
+
+  </div>
+  {% endif %}
+</div>

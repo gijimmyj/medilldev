@@ -1,0 +1,264 @@
+---
+title: Universal
+---
+
+{% extends "layouts/_default.html" %}
+
+
+{% block content %}
+
+<div class="hero__container--alt">
+  <img src="//satyr.io/2600x3:1" alt="placeholder">
+</div>
+
+<div class="page">
+  <aside>
+    <div class="left-nav">
+      {% include "modules/_sidebar.html" %}
+    </div>
+  </aside>
+
+  <main id="main-content" class="content" tabindex="0">
+    <ul id="breadcrumbs">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Page 1</a></li>
+      <li class="active">Page 2</li>
+    </ul>
+
+    <h1>This is a Page title (h1)</h1>
+
+    <p class="p--intro">This is a introductory paragraph that uses a typographic style that allows a writer to make a bold statement or highlight a primary idea or theme. This paragraph is set in larger, sans serif type to distinguish it from the running copy.</p>
+
+    <h2>This is a subhead (h2)</h2>
+
+    <div class="align-right align-zero">
+      <img src="//satyr.io/800x55:32" alt="placeholder">
+      <div class="image__caption">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tortor mi, eleifend id eros non, vulputate elementum ex. </p>
+      </div>
+
+    </div>
+    <p>This, of course, is not the real copy for this site. The real words will be written once we arrive at the content creation phase. Rest assured, the words will expand the concept. With clarity. Conviction. And even a little wit.</p>
+    <p>Because in today’s competitive environment, the body copy of every page must lead the reader through a series of disarmingly simple thoughts. All your supporting arguments must be communicated with simplicity and charm. And in such a way that the reader will read on. (After all, that’s a reader’s job: to read, isn’t it?)</p>
+
+    <p>And by the time your readers have reached this point in the finished copy, you will have convinced them that you not only respect their intelligence, but you also understand their needs as prospects. As a result of which, your site will repay your efforts. There’s every chance your competitors will wish they’d written this content, not you. While your customers will have probably forgotten that your competitors even exist.</p>
+
+    <p>Fact is, too much long body copy is dotted with such indulgent little phrases like truth is, fact is, and who’s to blame you. Trust us: we guarantee, with a hand over our heart, that no such indulgent rubbish will appear in your content. That’s why we have big blue pencils. So we can expunge every expedient example of low-witted waffle. For you, the skies will be blue, the birds will sing, and your copy will be crafted by a dedicated individual dreaming of your brand every single night.</p>
+
+    <h3>This is a subhead (h3)</h3>
+
+    <p>And so, while your dedicated reader, enslaved to each mellifluous paragraph, clutches his mouse with increasing interest, you can count all your increased profits and take pots of money to your bank. Sadly, this is not the real copy for this page. But it could well be.</p>
+
+    {% set media = {full: true, pushText: true, caption: true, title: true} %}
+    {% include "modules/_media.html" %}
+
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sollicitudin consequat nisl et venenatis. Nulla facilisi. Integer volutpat suscipit euismod. Aliquam erat volutpat. Ut sagittis lacinia elit sed dignissim. Praesent ut lobortis lorem. Mauris auctor condimentum purus, vitae dignissim nisi rutrum a. Nam sit amet lectus libero. Vestibulum dictum id urna et consequat. Integer congue feugiat lectus id hendrerit.</p>
+
+    <h4>This is a subhead (h4)</h4>
+
+    <p>Phasellus euismod at dui id scelerisque. Aliquam vel tellus diam. Aenean ut rhoncus lectus. Donec vehicula lacinia lectus quis scelerisque. Praesent vestibulum nulla sit amet mollis posuere. Suspendisse potenti.</p>
+
+    <section>
+      <h3 class="hide-label">Two Column Text 1</h3>
+      <div class="two-columns">
+        <article>
+          <h3 class="hide-label">Column</h3>
+          <ul>
+            <li>List Item A</li>
+            <li>List Item B</li>
+            <li>List Item C</li>
+          </ul>
+        </article>
+        <article>
+          <h3 class="hide-label">Column</h3>
+          <ol>
+            <li>List Item A</li>
+            <li>List Item B</li>
+            <li>List Item C</li>
+          </ol>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h3>Two Column Text</h3>
+      <div class="two-columns">
+        <article>
+          <h3 class="hide-label">Column</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sollicitudin consequat nisl et venenatis. Nulla facilisi. Integer volutpat suscipit euismod. Aliquam erat volutpat. Ut sagittis lacinia elit sed dignissim. Praesent ut lobortis lorem. Mauris auctor condimentum purus, vitae dignissim nisi rutrum.</p>
+        </article>
+        <article>
+          <h3 class="hide-label">Column</h3>
+          <p>Phasellus euismod at dui id scelerisque. Aliquam vel tellus diam. Aenean ut rhoncus lectus. Donec vehicula lacinia lectus quis scelerisque. Praesent vestibulum nulla sit amet mollis posuere. Suspendisse potenti.</p>
+        </article>
+      </div>
+    </section>
+
+
+
+    <section>
+      <h3>Quote or Tweet</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sollicitudin consequat nisl et venenatis. Nulla facilisi. Integer volutpat suscipit euismod. Aliquam erat volutpat. Ut sagittis lacinia elit sed dignissim. Praesent ut lobortis lorem. Mauris auctor condimentum purus, vitae dignissim nisi rutrum.</p>
+
+
+
+
+      <blockquote class="blockquote">
+        <div class="blockquote__no-img">
+          <span class="blockquote__no-img--icon">{{ svgstore('quote') }}</span>
+        </div>
+        <div class="blockquote__content">
+          <q>This is a pull quote that would allow for the featuring of an excerpt from the page copy.</q>
+          <cite>Author Name</cite>
+          <p class="cite-title">Occupation, Company</p>
+        </div>
+      </blockquote>
+
+      <p>Phasellus euismod at dui id scelerisque. Aliquam vel tellus diam. Aenean ut rhoncus lectus. Donec vehicula lacinia lectus quis scelerisque. Praesent vestibulum nulla sit amet mollis posuere. Suspendisse potenti. Nulla facilisi. Integer volutpat suscipit euismod. Aliquam erat volutpat. Ut sagittis lacinia elit sed dignissim. Praesent ut lobortis lorem.</p>
+
+
+
+      <blockquote class="blockquote">
+        <div class="blockquote__img">
+          <img src="//satyr.io/100" alt="placeholder">
+        </div>
+        <div class="blockquote__content">
+          <div class="blockquote__content__twitter">
+            <span class="blockquote__twitter__name">Firstname Lastname</span>
+            <a href="#" class="blockquote__twitter__handle">@TwitterHandle</a>
+            <span class="blockquote__twitter__icon">{{ svgstore('Social-Twitter') }}</span>
+          </div>
+          <q>This is a pull quote that would allow for the featuring of an excerpt from the page copy.</q>
+        </div>
+      </blockquote>
+    </section>
+
+    <section>
+      <h3>Table Styling</h3>
+      <table class="table-no-hover">
+        <tbody>
+          <tr>
+            <th>Table column 1</th>
+            <th>Table column 2</th>
+            <th>Table column 3</th>
+            <th>Table column 2</th>
+            <th>Table column 3</th>
+          </tr>
+          <tr>
+            <td>Table row 1</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+          </tr>
+          <tr>
+            <td>Table row 2</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+          </tr>
+          <tr>
+            <td>Table row 3</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+          </tr>
+          <tr>
+            <td>Table row 4</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+          </tr>
+          <tr>
+            <td>Table row 5</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <div class="expander expander1" data-collapse="data-collapse">
+        <h3 class="accordion__title">Accordion Style</h3>
+        <div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sollicitudin consequat nisl et venenatis. Nulla facilisi. Integer volutpat suscipit euismod. Aliquam erat volutpat. Ut sagittis lacinia elit sed dignissim. Praesent ut lobortis lorem. Mauris auctor condimentum purus, vitae dignissim nisi rutrum a. Nam sit amet lectus libero. Vestibulum dictum id urna et consequat. Integer congue feugiat lectus id hendrerit.</p>
+        </div>
+        <h3 class="accordion__title">Accordion Style</h3>
+        <div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sollicitudin consequat nisl et venenatis. Nulla facilisi. Integer volutpat suscipit euismod. Aliquam erat volutpat. Ut sagittis lacinia elit sed dignissim. Praesent ut lobortis lorem. Mauris auctor condimentum purus, vitae dignissim nisi rutrum a. Nam sit amet lectus libero. Vestibulum dictum id urna et consequat. Integer congue feugiat lectus id hendrerit.</p>
+        </div>
+        <h3 class="accordion__title">Accordion Style</h3>
+        <div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sollicitudin consequat nisl et venenatis. Nulla facilisi. Integer volutpat suscipit euismod. Aliquam erat volutpat. Ut sagittis lacinia elit sed dignissim. Praesent ut lobortis lorem. Mauris auctor condimentum purus, vitae dignissim nisi rutrum a. Nam sit amet lectus libero. Vestibulum dictum id urna et consequat. Integer congue feugiat lectus id hendrerit.</p>
+        </div>
+        <h3 class="accordion__title">Accordion Style</h3>
+        <div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sollicitudin consequat nisl et venenatis. Nulla facilisi. Integer volutpat suscipit euismod. Aliquam erat volutpat. Ut sagittis lacinia elit sed dignissim. Praesent ut lobortis lorem. Mauris auctor condimentum purus, vitae dignissim nisi rutrum a. Nam sit amet lectus libero. Vestibulum dictum id urna et consequat. Integer congue feugiat lectus id hendrerit.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h3 class="hide-label">Button Styles</h3>
+
+      <a href="#" class="button">Primary Button Style</a><br>
+
+      <a href="#" class="button__link">Secondary Button Style</a>
+
+      <ul class="button__tag__group">
+        <li><a href="#" class="button__tag">Speaker/Lecture</a></li>
+        <li><a href="#" class="button__tag">All Categories</a></li>
+      </ul>
+    </section>
+
+
+    <section>
+      <h1>Heading H1</h1>
+      <h2>Heading H2</h2>
+      <h3>Heading H3</h3>
+      <h4>Heading H4</h4>
+      <h5>Heading H5</h5>
+      <h6>Heading H6</h6>
+
+      <p class="p--intro">IMC students develop a deep understanding of consumers and build communications strategies based on qualitative insights and quantitative analysis. Students participate in many hands-on experiences both in and out of the classroom.</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tortor mi, eleifend id eros non, vulputate elementum ex. Duis semper est in massa semper, vitae consectetur lacus hendrerit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam eleifend erat eget tortor dignissim pulvinar. Mauris nibh risus, consequat eu iaculis et, pulvinar nec neque. Aliquam nec nisi sit amet diam sagittis elementum eget nec tellus.</p>
+
+      <p>Cras elementum id tortor quis tincidunt. Pellentesque id fermentum ipsum. Vivamus quis nunc ac metus <a href="#">porttitor condimentum</a>. Etiam porta congue tristique. Nullam sit <a href="#">amet condimentum felis</a>, sed ornare turpis. Morbi vitae pellentesque ante. Sed faucibus vestibulum ornare. Vestibulum posuere volutpat enim ut egestas. Aenean bibendum diam eu odio feugiat, at ullamcorper mi pulvinar.</p>
+
+      <p class="p--small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tortor mi, eleifend id eros non, vulputate elementum ex. Duis semper est in massa semper, vitae consectetur lacus hendrerit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam eleifend erat eget tortor dignissim pulvinar. Cras malesuada, orci quis finibus pellentesque, odio augue dictum est, ultricies mollis neque massa non magna. In vel condimentum sapien, eget sodales ante. Proin non urna faucibus, sodales nunc vel, sollicitudin neque.</p>
+
+      <div class="color__box purple"></div>
+      <div class="color__box purple-dark"></div>
+      <div class="color__box green"></div>
+      <div class="color__box orange"></div>
+      <div class="color__box gray-light"></div>
+      <div class="color__box gray"></div>
+      <div class="color__box black"></div>
+
+
+      <ul class="pagination">
+        <li><a href="#"><span class="hide-label">paginate left</span><span class="pagination__left--icon">{{ svgstore('arrow-left') }}</span></a></li>
+        <li><a class="pagination__link active" href="#">1</a></li>
+        <li><a class="pagination__link" href="#">2</a></li>
+        <li><a class="pagination__link" href="#">3</a></li>
+        <li><a class="pagination__link" href="#">4</a></li>
+        <li><a href="#"><span class="hide-label">paginate right</span><span class="pagination__right--icon">{{ svgstore('arrow-right') }}</span></a></li>
+      </ul>
+
+    </section>
+
+  </main>
+</div>
+
+
+
+<script type="text/javascript">document.getElementsByTagName('body')[0].setAttribute('class','standard-page wider-page');</script>
+{% endblock %}

@@ -1,0 +1,136 @@
+// expand/collapse (i.e. for faq's)
+
+// standard FAQ style
+.expander1 {
+    border-top: 1px solid $light-grey;
+    border-bottom: 1px solid $light-grey;
+    margin: 2rem 0;
+
+    h3, h4 {
+
+        > a {
+            position: relative;
+            padding: .5em 0 .5rem 2.5rem;
+            &:before {
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                content: '';
+                background: url("#{$path-images}/icons/arrow-right-dkpurple.svg") no-repeat .5rem center / 18px 21px;
+            }
+        }
+
+
+        &.open a {
+            position: relative;
+            &:before  {
+                position: absolute;
+                content: '';
+                background-image: url("#{$path-images}/icons/arrow-down-dkpurple.svg");
+                background-repeat: no-repeat;
+                background-position: .3rem center;
+                background-size: 22px 24px;
+            }
+        }
+    }
+}
+
+// standard FAQ style with contained dropdown and optional data field on right side
+.expander2 {
+    border: 1px solid $light-grey;
+    margin: 2rem 0;
+
+    h3, h4 {
+
+        > a {
+            background: url("#{$path-images}/icons/arrow-right-dkpurple.svg") no-repeat .5rem center / 8px 16px;
+            padding: .5em 0 .5rem 2rem;
+
+        }
+
+        &.open a {
+            background: url("#{$path-images}/icons/arrow-down-dkpurple.svg") no-repeat .3rem center / 16px 8px;
+        }
+
+        span {
+            float: right;
+            border-right: 1px solid $light-grey;
+            padding-right: .5rem;
+        }
+    }
+}
+
+// purple background with arrow on right side
+.expander3 {
+    margin: 2rem 0;
+
+    h3, h4, .news__events__category__label {
+        background: $nu-purple;
+
+        > a {
+            background: url("#{$path-images}/icons/arrow-right-white.svg") no-repeat right 1rem center / 12px 18px;
+            padding: .5em 3rem .5rem 1rem;
+            color: $white;
+        }
+
+        &.open a {
+            background: url("#{$path-images}/icons/arrow-down-white.svg") no-repeat right 1rem center / 18px 12px;
+        }
+    }
+    .news__events__category__label {
+        @include mq(48em) {
+            background: transparent;
+        }
+    }
+}
+
+// basics
+.expander {
+
+ h3, h4, .news__events__category__label {
+    margin: 0;
+    font: 27px/34px $CamptonBook;
+    border-top: 1px solid $light-grey;
+
+    &:first-of-type {
+        border-top: none;
+    }
+
+    > a {
+        font: 27px/34px $CamptonBook;
+        display: block;
+        margin: 0;
+    }
+}
+
+.news__events__category__label a {
+    @include mq(48em) {
+        font: 15px/24px $AkkuratProBold;
+        padding: 0;
+    }
+}
+
+> div {
+    margin: 1rem 2.5rem;
+
+    h4 {
+        color: $rich-black-50;
+        font: 26px/1.2em "Akkurat Pro Regular",Arial,sans-serif;
+        margin-bottom: 1rem;
+        background: none;
+    }
+}
+}
+
+@media screen and (max-width: 480px) {
+
+    // overrides h3 font-size change to 24px from /scss/standard-page/_main.scss
+    .content .expander h3,
+    .content .expander1 h3,
+    .content .expander2 h3,
+    .content .expander3 h3 {
+        font-size: 18px;
+    }
+}

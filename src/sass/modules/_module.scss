@@ -1,0 +1,184 @@
+.module {
+  padding: 2rem 0;
+  @include mq(64em) {
+    padding: 5rem 0;
+  }
+  .page {
+    margin-top: 0;
+  }
+  h3 {
+    color: $ms-gray;
+    margin-bottom: 1.5rem;
+  }
+  h2 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.module--first {
+  padding: 0 !important;
+}
+
+.module + .module {
+  padding: 1rem 0;
+  @include mq(64em) {
+    padding: 2rem 0;
+  }
+}
+
+.module--purple {
+  background-color: $ms-purple-dark;
+  h3, a {
+    color: $white;
+  }
+}
+
+
+
+.module--dark {
+  h2, h3, a, p {
+    color: $white;
+  }
+}
+
+.module__inline {
+  @include mq(64em) {
+    line-height: 0;
+  }
+}
+
+.module__header {
+  .module__inline & {
+    display: inline-block;
+  }
+}
+
+.module__inline__tabs {
+  @include clean;
+  .module__inline & {
+    @include mq(64em) {
+      float: right;
+      display: inline-block;
+    }
+  }
+}
+
+
+.module__inline__tab__item {
+  list-style: none;
+  margin: 1rem 0;
+
+  @include mq(64em) {
+    display: inline-block;
+    padding-left: 3rem;
+  }
+}
+
+.module__inline__tab__link {
+  text-decoration: none;
+  padding: 0.5rem 0;
+  font-size: 18px;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    @include underline($color: currentColor, $position: 90%);
+  }
+}
+
+.module__content__list {
+  margin: 1.5rem 0 0 0;
+  padding: 0;
+  @include clear;
+}
+
+.module__content__list__item {
+  display: inline-block;
+  background: $white;
+  list-style: none;
+  float: left;
+  text-align: center;
+  padding: 1rem 3rem;
+  width: 100%;
+  margin: 0.5rem 0;
+  @include mq(64em) {
+    width: 48%;
+    margin: 0.5rem;
+  }
+  @include mq(80em) {
+    width: 32.14286%;
+  }
+  &:nth-child(3) {
+    @include mq(80em) {
+      margin-right: 0;
+    }
+  }
+}
+
+.module__media {
+  background: $ms-gray-light;
+  margin: 2rem auto 0;
+  padding: 1rem;
+  @include mq(48em) {
+    width: 90%;
+    padding: 2.5rem;
+  }
+  .module__media--full & {
+    width: 100%;
+  }
+}
+
+.module__media__img {
+  margin-bottom: 1rem;
+  @include mq(64em) {
+    float: left;
+  }
+  img {
+    margin: 0 auto;
+  }
+
+}
+
+.module__media__content {
+
+  @include mq(48em) {
+    padding-left: 2rem;
+    overflow: hidden;
+  }
+}
+
+.module__media__content--title {
+  @extend h5;
+}
+
+.module__link a {
+  text-decoration: underline !important;
+  background-image: none !important;
+  font: 24px/38px $CamptonBook;
+  padding: 0 0.3rem;
+  display: block;
+  text-align: left;
+  &:hover,
+  &:focus {
+    text-decoration: none !important;
+    background-image: none !important;
+  }
+}
+
+.module__button {
+  margin: 2rem 0;
+}
+
+.module__arrow {
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    left: calc(50% - 1.5rem);
+    box-sizing: border-box;
+    border: 1rem solid black;
+    border-color: transparent transparent $ms-purple $ms-purple;
+    transform-origin: 0 0;
+    transform: rotate(-45deg);
+  }
+}

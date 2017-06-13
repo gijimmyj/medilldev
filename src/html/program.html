@@ -1,0 +1,380 @@
+---
+title: Academic Program Page
+---
+
+{% extends "layouts/_default.html" %}
+
+
+{% block content %}
+
+
+<div class="hero__container" style="background-image: url(//satyr.io/2600x3:1);">
+  <div class="hero__wrap">
+    <a class="hero__play" href="https://www.youtube.com/watch?v=mPq-PwMliHk" data-modal>
+      <span class="hero__play--icon">{{ svgstore('play') }}</span>
+      Experience IMC
+    </a>
+  </div>
+</div>
+
+<div class="page">
+
+  <aside>
+    <div class="left-nav">
+      {% include "modules/_sidebar.html" %}
+
+    </div>
+  </aside>
+
+  <div class="content-full">
+    <div class="sidebar__right">
+      <div class="sidebar__button__group">
+        <a href="#" class="button">Apply Now</a>
+        <a href="#" class="button">Request Information</a>
+        <a href="#" class="button">Contact Us</a>
+      </div>
+    </div>
+  </div>
+  <main id="main-content" class="mid-content sidebar__sticky" tabindex="0">
+    <ul id="breadcrumbs">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Page 1</a></li>
+      <li class="active">Page 2</li>
+    </ul>
+
+
+    <section>
+      <h1>Full-Time Integrated Marketing Communication Master’s Program</h1>
+      <p class="p--intro">IMC students develop a deep understanding of consumers and build communications strategies based on qualitative insights and quantitative analysis.</p>
+    </section>
+
+    <section>
+      <h2>About the Program</h2>
+      <p>Students participate in many hands-on experiences both in and out of the classroom. The program features a strong focus on media, particularly the digital media technologies that are revolutionizing the ways organizations interact with consumers and other audiences.</p>
+    </section>
+    {% set media = {full: true, pushText: true, caption: true, title: true} %}
+    {% include "modules/_media.html" %}
+
+    <section>
+      <h3>Why the Full-Time IMC Program?</h3>
+      <p>The full-time Integrated Marketing Communication (IMC) program is designed to launch your career in the marketing field through an intensive, five-quarter program that prepares you to solve the marketing problems of the digital age.</p>
+
+      <p>Students typically have a few years of work experience or come directly from undergraduate programs. The program is internationally focused with approximately half of the students coming from outside the U.S.</p>
+    </section>
+
+    <section>
+      <h3>What Will I Study?</h3>
+      <p>The full-time program requires students to complete 15 courses and a summer immersion quarter. The immersion quarter combines classroom learning with on-site immersion with top companies to work on real-world consulting projects. Students can choose electives from among the five specializations to customize their experiences to match career goals and interests.</p>
+
+      <h4>Specializations Include:</h4>
+      <div class="two-columns">
+        <article>
+          <h5 class="hide-label">Specialization</h5>
+          <ul>
+            <li>Digital and Interactive Marketing</li>
+            <li>Strategic Communications</li>
+            <li>Brand Strategy</li>
+          </ul>
+        </article>
+        <article>
+          <h5 class="hide-label">Specialization</h5>
+          <ul>
+            <li>Marketing Analytics</li>
+            <li>Content Marketing</li>
+            <li>Media Management</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h3>Learning Outcomes</h3>
+      <p>In this program, you will learn to create innovative marketing communications strategies by working collaboratively with global companies to solve current marketing communications challenges. In the master’s program at Medill, you will: </p>
+
+      <ul>
+        <li>Develop insights that engage consumers to grow businesses.</li>
+        <li>Integrate brand communications across digital and traditional media platforms.</li>
+        <li>Analyze complex data to inform powerful brand communication strategies.</li>
+        <li>Produce social media campaigns that drive measurable results.</li>
+      </ul>
+    </section>
+  </main>
+  <div class="left-nav">
+    <div class="sidebar__block">
+      <div class="sidebar__card">
+        <div class="sidebar__card--title countup">6</div>
+        <div class="sidebar__card--text">Specializations</div>
+      </div>
+    </div>
+
+    <div class="sidebar__block">
+      <div class="sidebar__card">
+        <div class="sidebar__card--title countup">54</div>
+        <div class="sidebar__card--text">Immersion Quarter Sessions</div>
+      </div>
+    </div>
+
+    <div class="sidebar__block">
+      <div class="sidebar__card">
+        <div class="sidebar__card--title countup">54000</div>
+        <div class="sidebar__card--text">Alumni</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<section>
+  <div class="module module--purple">
+    <div class="page module__tabs">
+      <div class="module__inline">
+        <h3 class="module__header">The Curriculum</h3>
+        <ul class="module__inline__tabs" role="tablist">
+          <li class="module__inline__tab__item"><a class="module__inline__tab__link" aria-controls="tab-panel1" href="#tab-panel1" id="tab1" role="tab">Core Courses</a></li>
+          <li class="module__inline__tab__item"><a class="module__inline__tab__link" aria-controls="tab-panel1" href="#tab-panel2" id="tab2" role="tab">Elective Courses</a></li>
+          <li class="module__inline__tab__item"><a class="module__inline__tab__link" aria-controls="tab-panel1" href="#tab-panel3" id="tab3" role="tab">Internship Opportunities</a></li>
+        </ul>
+      </div>
+
+      <div class="module__content">
+
+        <div id="tab-panel1" role="tabpanel" aria-labelledby="tab1">
+          <ul class="module__content__list">
+            <li class="module__content__list__item">Consumer Insight</li>
+            <li class="module__content__list__item">Marketing Management</li>
+            <li class="module__content__list__item">Financial Accounting</li>
+            <li class="module__content__list__item">Statistics and Marketing Reseach</li>
+            <li class="module__content__list__item">IMC Strategic Process</li>
+          </ul>
+        </div>
+        <div id="tab-panel2" role="tabpanel" aria-labelledby="tab2">
+          <ul class="module__content__list">
+            <li class="module__content__list__item">Tab2 Item</li>
+          </ul>
+        </div>
+        <div id="tab-panel3" role="tabpanel" aria-labelledby="tab3">
+          <ul class="module__content__list">
+            <li class="module__content__list__item">Tab3 Item</li>
+            <li class="module__content__list__item">Tab3 Item</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="background-select content-full">
+  <div class="background-select-image" style="background: url('//common.northwestern.edu/v8/css/images/slashes-grey-bg.gif') no-repeat center / cover">
+
+    <div class="module">
+      <div class="page">
+        <div class="align-text-center">
+          <h3>Global Opportunities</h3>
+          <div class="feature-three-col">
+            <article class="feature-box">
+              <div class="feed feed__item--small">
+                <div class="feed__card block__item--animate feature-box--white">
+                  <div class="feed__item__img">
+                    <a href="#"><img src="//satyr.io/550x350" alt="placeholder"></a>
+                  </div>
+                  <div class="feed__card__content">
+                    <h3 class="feed__card__content--title">
+                      <a href="#">Journalism</a>
+                    </h3>
+                    <div class="feed__item__content--text">
+                      <p>Medill is preparing the next generation of journalists for the best jobs and leadership in media.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="feature-box">
+              <div class="feed feed__item--small">
+                <div class="feed__card block__item--animate feature-box--white">
+                  <div class="feed__item__img">
+                    <a href="#"><img src="//satyr.io/550x350" alt="placeholder"></a>
+                  </div>
+                  <div class="feed__card__content">
+                    <h3 class="feed__card__content--title">
+                      <a href="#">Journalism</a>
+                    </h3>
+                    <div class="feed__item__content--text">
+                      <p>Medill is preparing the next generation of journalists for the best jobs and leadership in media.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="feature-box">
+              <div class="feed feed__item--small">
+                <div class="feed__card block__item--animate feature-box--white">
+                  <div class="feed__item__img">
+                    <a href="#"><img src="//satyr.io/550x350" alt="placeholder"></a>
+                  </div>
+                  <div class="feed__card__content">
+                    <h3 class="feed__card__content--title">
+                      <a href="#">Journalism</a>
+                    </h3>
+                    <div class="feed__item__content--text">
+                      <p>Medill is preparing the next generation of journalists for the best jobs and leadership in media.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="module">
+  <section class="content-full">
+
+    <div class="page">
+      <div class="align-text-center">
+        <h3>Featured Student Work</h3>
+        <img src="//satyr.io/1440x500" alt="placeholder">
+      </div>
+      <div class="module__media">
+        <div class="module__media__img">
+          <img src="//satyr.io/400x300" alt="placeholder">
+        </div>
+        <div class="module__media__content">
+          <h4 class="module__media__content--title">
+            Student Work Added to U.S. Holocaust Memorial Museum Collection
+          </h4>
+          <p class="module__media__content--text">
+            A summer reporting project that sent Medill graduate journalism students to Germany and throughout Chicago to record personal stories has been added to the collection of the United States Holocaust Memorial Museum in Washington, D.C. The Memory Archives project was created through a collaboration between students from Medill and HAW Hamburg School of Design, Media and Arts in the summer of 2014. The students tracked dozens of Holocaust survivors and their family members in Chicago and Hamburg, Germany, and recorded their testimonials in text, video and audio.
+          </p>
+          <a href="#" class="module__media__content--link button__link">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+
+<div class="module">
+  <section class="content-full">
+
+    <div class="page">
+      <div class="align-text-center">
+        <h3>Our Alumni and Faculty</h3>
+      </div>
+      <div class="feature-three-col">
+        <article class="feature-box">
+          {% set block = {animate: true, tag: 'Faculty', name: 'Tom Collinger',title: 'Associate Professor'} %}
+          {% include "modules/_block.html" %}
+
+        </article>
+        <article class="feature-box">
+          {% set block = {animate: true, text: 'Long', tag: 'Alumni', name: 'J.A. Adande', title: '2008 alum, IMC'} %}
+          {% include "modules/_block.html" %}
+        </article>
+        <article class="feature-box">
+          {% set block = {animate: true, tag: 'Faculty', name: 'Kalyan Raman, Ph.D.', title: 'Professor'} %}
+          {% include "modules/_block.html" %}
+        </article>
+      </div>
+    </div>
+
+  </section>
+</div>
+
+<div class="module">
+  <section class="background-select content-full">
+    <div class="background-select-image" style="background: url('//common.northwestern.edu/v8/css/images/purple-slashes-standard.jpg') no-repeat center / cover">
+      <div class="module module--dark">
+
+        <div class="page">
+          <div class="align-text-center">
+            <h2 class="header--white">Featured Publications</h2>
+          </div>
+          <div class="feature-three-col">
+            <article class="feature-box">
+              <h4 class="module__link">
+                <a href="#">Understanding China's Digital Generation</a>
+              </h4>
+            </article>
+            <article class="feature-box">
+              <h4 class="module__link">
+                <a href="#">National Security Law in the News: A Guide for Journalists, Scholars, and Policymakers</a>
+              </h4>
+            </article>
+            <article class="feature-box">
+              <h4 class="module__link">
+                <a href="#">National Security Law in the News: A Guide for Journalists, Scholars, and Policymakers</a>
+              </h4>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="module">
+  <section class="content-full slider">
+    <div class="page">
+      <div class="align-text-center"><h2>Related Programs</h2></div>
+
+      {% include "modules/_slider.html" %}
+    </div>
+  </section>
+</div>
+
+<div class="module">
+  <div class="page">
+    <div class="wrap wrap--slim">
+      <section class="content-full">
+        <div class="align-text-center">
+          <h3>Upcoming Events</h3>
+        </div>
+        <article class="event">
+          <div class="event-date">
+            <div class="month">June</div>
+            <div class="day">12</div>
+            <div class="year">2016</div>
+          </div>
+          <div class="event-description">
+            <h4><a href="#">Graduate Student IMC Information Session</a></h4>
+            <p class="event-time-location"><strong>Time:</strong> 5:30 PM - 6:30 PM</p>
+            <p class="event-time-location"><strong>Location:</strong> Chicago</p>
+          </div>
+        </article>
+        <article class="event">
+          <div class="event-date">
+            <div class="month">June</div>
+            <div class="day">13</div>
+            <div class="year">2016</div>
+          </div>
+          <div class="event-description">
+            <h4><a href="#">Medill Fridays: Community: Walk the Walk, Talk the Talk, and Eat the Food</a></h4>
+            <p class="event-time-location"><strong>Time:</strong> 5:30 PM - 6:30 PM</p>
+            <p class="event-time-location"><strong>Location:</strong> Chicago</p>
+          </div>
+        </article>
+        <article class="event">
+          <div class="event-date">
+            <div class="month">June</div>
+            <div class="day">18</div>
+            <div class="year">2016</div>
+          </div>
+          <div class="event-description">
+            <h4><a href="#">Medill Fridays: Interactive Discussion at the Knight Lab</a></h4>
+            <p class="event-time-location"><strong>Time:</strong> 5:30 PM - 6:30 PM</p>
+            <p class="event-time-location"><strong>Location:</strong> Chicago</p>
+          </div>
+        </article>
+        <div class="align-text-center event__button">
+          <a href="#" class="button">Medill Calendar</a>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">document.getElementsByTagName('body')[0].setAttribute('class','standard-page wider-page');</script>
+{% endblock %}

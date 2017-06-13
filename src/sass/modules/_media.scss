@@ -1,0 +1,107 @@
+.media {
+  @include spacing(2);
+}
+
+.media--narrow {
+  @include mq(48em) {
+    max-width: 66.6667%;
+  }
+}
+
+.media--left,
+.media--right {
+  @include mq(48em) {
+    width: calc(50% - 1rem);
+  }
+}
+
+.media--left {
+  @include mq(48em) {
+    margin-right: 2rem;
+    float: left;
+  }
+}
+
+.media--right {
+  @include mq(48em) {
+    margin-left: 2rem;
+    float: right;
+  }
+}
+
+.media--tight {
+  @include spacing(-2);
+  @include mq(64.0625em) {
+    @include spacing(2);
+  }
+}
+
+.media__text {
+  background: $ms-gray-light;
+  padding: 1rem 1rem 0.5rem 0;
+  p {
+    margin: 0;
+  }
+}
+
+.media__item {
+  display: block;
+  position: relative;
+}
+
+.media__text__title {
+  font: 19px/24px $CamptonBold;
+  color: $ms-purple;
+}
+
+.media__text__caption {
+  margin-bottom: 1rem !important;
+}
+
+
+.media__icon {
+  position: absolute;
+  bottom: 1.25rem;
+  left: 1.25rem;
+  width: 4rem;
+  color: $black;
+  background-image: radial-gradient(16px at 2rem 40% , $white 0%, $white 14px, rgba(255, 255, 255, 0) 18px, rgba(255, 255, 255, 0) 19px);
+  .media--full & {
+    display: block;
+    position: static;
+    margin: auto;
+    color: $black;
+  }
+}
+
+.media__text--push {
+  padding-left: 1rem;
+  @include mq(48em) {
+    padding-left: 5rem;
+  }
+}
+
+.media__embed {
+  position: relative;
+  padding-bottom: 56.25%;
+  margin-bottom: 2rem;
+  > * {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.media__embed--medium {
+  position: relative;
+  padding-bottom: 56.25%;
+  margin-bottom: 2rem;
+  @include mq(48em) {
+      padding-bottom: 30%;
+  }
+  > * {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+}

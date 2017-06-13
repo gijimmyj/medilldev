@@ -1,0 +1,28 @@
+// automatically generated from svgstore-sass task template
+.svgstore {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 0;
+  pointer-events: none;
+
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+{{ #items }}
+
+$svgstore--{{ name }}: {{{ data }}};
+
+%svgstore--{{ name }} {
+  background-image: {{{ data }}};
+}
+
+.svgstore--{{ name }} {
+  padding-bottom: {{ height }} / {{ width }} * 100%;
+}
+{{ /items }}

@@ -1,0 +1,51 @@
+{% if image.info %}
+<a href="#" class="image">
+  <img class="image__item" src="//placehold.it/735x490" alt="placeholder" />
+  <div class="image__overlay">
+    <div class="h6 image__heading">Lorem ipsum dolor.</div>
+    <p class="p--small p--sans-serif">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta provident doloribus, accusamus! Optio obcaecati facilis sed numquam ipsa, natus, sunt, quidem maiores eligendi beatae aliquid.</p>
+  </div>
+</a>
+{% elif image.social %}
+<div class="image image--social" tabindex="0">
+  <img class="image__item" src="//placehold.it/240x240" alt="placeholder" />
+  <div class="image__social">
+    <div class="image__date">April 1, 2016</div>
+    <div class="image__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima fugit cum voluptas alias architecto in fuga debitis, tempore.</div>
+    <div class="image__meta">
+      <a href="#" class="image__meta__link"><span class="image__meta__icon">{{ svgstore('heart') }}</span><span class="hide">Favorites </span>14</a>
+      <a href="#" class="image__meta__link"><span class="image__meta__icon">{{ svgstore('comment') }}</span><span class="hide">Comments </span>12</a>
+    </div>
+  </div>
+</div>
+{% elif image.link %}
+<a href="#" class="image">
+  <img class="image__item" src="//placehold.it/510x340" alt="placeholder" />
+  <div class="image__gradient"></div>
+  <div class="image__text">
+    <div class="h5 image__heading image__heading--link">Lorem ipsum dolor sit amet, consectetur.</div>
+  </div>
+</a>
+
+{% elif image.video %}
+
+<li class="image">
+  <img class="image__item" src="//placehold.it/1023x682" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, obcaecati." />
+  <div class="media__overlay media--full">
+  <a class="media__item" href="https://www.youtube.com/watch?v=G4K4aZT5gaI" data-modal><div class="media__icon"><span class="hide">Play</span>{{ svgstore('play-alt') }}</div></a>
+  </div>
+  <div class="image__gradient"></div>
+  <div class="image__text">
+    <p class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, obcaecati.</p>
+  </div>
+</li>
+
+{% else %}
+<li class="image">
+  <img class="image__item" src="//placehold.it/1023x682" alt="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, obcaecati." />
+  <div class="image__gradient"></div>
+  <div class="image__text">
+    <p class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, obcaecati.</p>
+  </div>
+</li>
+{% endif %}

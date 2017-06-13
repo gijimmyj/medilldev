@@ -1,0 +1,209 @@
+// headers
+h1 {
+  font: 36px/40px $CamptonBook;
+  margin-bottom: 1rem;
+  color: $nu-purple;
+  word-wrap: break-word;
+  @include mq(48em) {
+    font: 52px/62px $CamptonBook;
+  }
+
+}
+
+h2 {
+  font: 32px/38px $CamptonBook;
+  color: $nu-purple;
+  margin-bottom: 1rem;
+  @include mq(48em) {
+    font: 40px/48px $CamptonBook;
+  }
+}
+
+h3 {
+  font: 27px/34.2px $CamptonBold;
+  color: $ms-gray;
+  margin-bottom: .5rem;
+  @include mq(48em) {
+    font: 30px/38px $CamptonBold;
+  }
+}
+
+h4 {
+  font: 24.3px/32.4px $CamptonBook;
+  color: $ms-black;
+  margin-bottom: 1rem;
+  @include mq(48em) {
+    font: 27px/36px $CamptonBook;
+  }
+
+
+}
+
+h5 {
+  font: 22px/28px $CamptonBook;
+  color: $ms-black;
+  margin-bottom: 1rem;
+}
+
+h6 {
+  font: 19px/24px $CamptonBold;
+  color: $ms-purple;
+  margin-bottom: 1rem;
+}
+
+
+
+
+// heading overrides
+.h2 {
+  font: 40px/48px $CamptonBook;
+  color: $nu-purple !important;
+  margin-bottom: 1rem;
+}
+
+
+// Blockquotes
+
+.blockquote {
+  padding: 1rem 0;
+}
+
+.blockquote__img,
+.blockquote__no-img {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 1rem;
+  @include mq(48em) {
+    float: left;
+    margin: 0;
+  }
+}
+.blockquote__no-img {
+  background: $ms-purple-dark;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blockquote__no-img--icon {
+  display: block;
+  color: #664c86;
+  width: 3rem;
+
+}
+
+.blockquote__content {
+  overflow: hidden;
+  padding-left: 1rem;
+  q {
+    font: 30px/38px $CamptonBook;
+    color: $ms-purple;
+    display: block;
+    margin-bottom: 0.5rem;
+    a {
+      display: inline;
+    }
+  }
+  cite {
+    font: 17px/24px $AkkuratProBold;
+    color: $ms-gray;
+  }
+
+  .cite-title {
+    margin: 0 !important;
+    color: $ms-gray;
+    font: 15px/24px $AkkuratProRegular;
+  }
+}
+
+.blockquote__content__twitter {
+  margin-bottom: 0.5rem;
+}
+
+.blockquote__twitter__name {
+  font: 12px/24px $AkkuratProBold;
+  color: $ms-gray;
+}
+
+.blockquote__twitter__handle {
+  font: 12px/24px $AkkuratProRegular;
+  color: $ms-green !important;
+}
+
+.blockquote__twitter__icon {
+  display: inline-block;
+  float: right;
+  width: 1.5rem;
+  color: #00aced;
+}
+
+
+.p--intro {
+  font: 24px/35px $AkkuratLight;
+  color: $ms-black;
+  padding-bottom: 2rem;
+}
+
+.p--intro + .p--intro {
+  margin-top: -2rem;
+}
+
+.p--small {
+  font: 15px/24px $AkkuratProRegular;
+}
+
+
+
+hr {
+  border: 0;
+  height: 0.15rem;
+  width: 100%;
+  background: $ms-gray-light;
+}
+
+.hr--color {
+  background: $ms-orange;
+}
+
+.hr--dark {
+  background: $medium-grey;
+  width: auto;
+}
+
+// Demo purposes
+
+.color__box {
+  display: inline-block;
+  width: 5rem;
+  height: 5rem;
+  margin: 1rem;
+}
+
+.purple {
+  background: $ms-purple;
+}
+
+.purple-dark {
+  background: $ms-purple-dark;
+}
+
+.green {
+  background: $ms-green;
+}
+
+.orange {
+  background: $ms-orange;
+}
+
+.gray-light {
+  background: $ms-gray-light;
+}
+
+.gray {
+  background: $ms-gray;
+}
+
+.black {
+  background: $ms-black;
+}
+

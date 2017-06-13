@@ -1,0 +1,72 @@
+---
+title: Faculty Bio
+---
+
+{% extends "layouts/_default.html" %}
+
+
+{% block content %}
+<div class="page">
+  <aside>
+    <div class="left-nav">
+      {% include "modules/_sidebar.html" %}
+    </div>
+  </aside>
+  <main id="main-content" class="content" tabindex="0">
+
+    <ul id="breadcrumbs">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Page 1</a></li>
+      <li class="active">Page 2</li>
+    </ul>
+    <section>
+    <div class="grid">
+
+          <div class="grid__item grid__item--3-2">
+            <h1>Louise Kiernan</h1>
+            <h3>Associate Professor</h3>
+
+            <ul>
+              <li><strong>Phone:</strong> 847-467-2163</li>
+              <li><strong>Office:</strong> MFC 4-137</li>
+              <li><strong>Email:</strong> <a href="#">l-kiernan@northwestern.edu</a></li>
+            </ul>
+
+            <blockquote class="blockquote">
+              <div class="blockquote__no-img">
+                <span class="blockquote__no-img--icon">{{ svgstore('quote') }}</span>
+              </div>
+              <div class="blockquote__content">
+                <q>This is a pull quote that would allow for the featuring of an excerpt from the page copy.</q>
+                <cite>Author Name</cite>
+                <p class="cite-title">Occupation, Company</p>
+              </div>
+            </blockquote>
+          </div>
+
+          <div class="grid__item grid__item--3">
+            <img class="" src="http://www.medill.northwestern.edu/_pictures/bio-images/Louise_Kearnan1-750x1125.jpg" alt="placeholder">
+          </div>
+
+      </div>
+
+
+
+      <p>Louise Kiernan, a Pulitzer Prize-winning reporter and editor at the Chicago Tribune, is an associate professor at Medill. Most recently, she was Enterprise Editor at the Tribune where she managed a team of reporters working on in-depth news features and coached writers throughout the newsroom.</p>
+
+      <p>During a 10-year stint as special projects reporter at the newspaper, she won a 2001 Pulitzer Prize for Explanatory Reporting as lead writer of a four-part series on problems with air travel. Kiernan also worked as an urban affairs team editor and reporter, directing coverage of issues such as housing and immigration and specializing in writing about social policy, including welfare reform, poverty and juvenile justice.</p>
+
+      <div class="media__embed--medium align-medium">
+        <iframe src="https://www.youtube.com/embed/VFp_Dsnu2tQ" allowfullscreen></iframe>
+      </div>
+
+      <h3>Education</h3>
+      <p>Louise earned a B.A. at the University of Virginia, a master's degree at Medill and was a Nieman Fellow at Harvard.</p>
+    </section>
+
+
+  </main>
+</div>
+
+<script type="text/javascript">document.getElementsByTagName('body')[0].setAttribute('class','standard-page wider-page');</script>
+{% endblock %}

@@ -1,0 +1,277 @@
+---
+title: Homepage
+map: true
+---
+
+{% extends "layouts/_default.html" %}
+
+
+{% block content %}
+
+<div id="main-content">
+  <div class="hero__container--alt">
+    <button class="home__hero__cta">
+
+      <span class="home__hero__cta--icon">      <span class="home__hero__cta--bg"></span><span class="hide-label">Go to next section</span>{{ svgstore('hero_arrow') }}</span>
+
+    </button>
+    <div class="home__hero__container" style="background-image:url('img/medill-home-min.jpg')"></div>
+
+
+    <svg class="home__hero__svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+
+      <path d="" class="left-line" fill="none" stroke-width="6" />
+
+      <path d="" class="right-line" fill="none" stroke-width="6" />
+
+    </svg>
+
+    <div class="home__hero__content">
+
+
+      <div class="home__hero__text__wrapper">
+        <span class="home__hero--header">In a World Moved by Stories</span>
+      </div>
+
+      <div class="home__hero__text__wrapper">
+        <span class="home__hero--title">Yours Begins Here</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="parallax__container content-full" style="background-image:url('//satyr.io/1920x1050')">
+    <div class="page">
+      <div class="contain-970 parallax__container__first">
+        <section>
+          <div class="parallax--animate">
+            <div class="align-text-center">
+              <h2 class="parallax__header">The Power of a Medill Education</h2>
+            </div>
+
+            <p class="p--intro">As the media industry experiences unprecedented change, Medill leads the way. We are training a new generation of <strong>multimedia journalists</strong> and <strong>integrated marketing communications professionals</strong> who are not only thriving in this evolving media landscape but also helping to shape it.</p>
+
+            <div class="parallax__button__container">
+              <a href="#" class="button">Explore Journalism</a>
+              <a href="#" class="button">Explore Integrated Marketing Communications</a>
+              <a href="#" class="button">Explore All Programs</a>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="wrap parallax__container__second">
+        <div class="feature-three-col">
+          <div class="feature-box">
+            <div class="parallax__number countup">
+              15000
+            </div>
+            <div class="parallax__text">
+              Alumni
+            </div>
+          </div>
+          <div class="feature-box">
+            <div class="parallax__number countup">
+              2400
+            </div>
+            <div class="parallax__text">
+              IMC Alumni
+            </div>
+          </div>
+          <div class="feature-box">
+            <div class="parallax__number countup">
+              12500
+            </div>
+            <div class="parallax__text">
+              Journalism Alumni
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="module">
+    <div class="content-full">
+      <div class="page">
+        <div class="wrap wrap--narrow">
+          {% set tweet = { noImg: true } %}
+          {% include "modules/_tweet.html" %}
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="module">
+    <section class="background-select content-full">
+      <div class="background-select-image" style="background: url('//common.northwestern.edu/v8/css/images/purple-slashes-standard.jpg') no-repeat center / cover">
+        <div class="module module--dark">
+          <div class="page">
+            <div class="wrap wrap--narrow">
+              <div class="align-text-center">
+                <h2 class="header--white">Our Faculty</h2>
+              </div>
+              <p class="p--intro">Medill faculty represent the highest levels of accomplishment in scholarship, journalism and global commerce.</p>
+              <p class="p--intro">They are actively involved in mentoring students and conducting research to create knowledge. Our staff and administration comprise experienced professionals, many of whom are Medill alumni. </p>
+
+              <div class="align-text-center">
+                <a href="#" class="button button__white">View All Faculty</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="module__arrow"></div>
+  </div>
+
+  <div class="container--gray-light">
+    <section class="content-full">
+      <div class="feature__container__image">
+        <img src="//satyr.io/2600x1050" alt="placeholder">
+      </div>
+      <div class="page">
+        <div class="feature__slider">
+          <div class="feature__slider__heading">
+            Featured Faculty
+          </div>
+          {% set slider = {alt: true} %}
+          {% include "modules/_slider.html" %}
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="background-select content-full">
+      <div class="background-select-image" style="background: url('//common.northwestern.edu/v8/css/images/purple-slashes-standard.jpg') no-repeat center / cover">
+        <div class="module module--dark">
+          <div class="page">
+            <div class="wrap wrap--narrow">
+              <div class="align-text-center">
+                <h2 class="header--white">A Global Presence</h2>
+              </div>
+              <p>Medill is, and always will be, more than a specific location or singular experience. The school has programs in Evanston, Chicago and Washington, D.C., and is opening a new space in the San Francisco Bay Area.</p>
+              <p>Medill faculty and students are also an important part of the Northwestern University program in Qatar.</p>
+            </div>
+          </div>
+        </div>
+        {% include "modules/_map.html" %}
+      </div>
+    </section>
+
+  </div>
+
+
+
+
+  <div class="module">
+    <div class="content-full">
+      <div class="page">
+        <div class="wrap wrap--narrow">
+          {% set tweet = {noImg: false} %}
+          {% include "modules/_tweet.html" %}
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="banner__container content-full" style="background-image: url('//satyr.io/2600x16:9');">
+  <div class="banner__wrap">
+    <div class="banner__content">
+      <div class="wrap wrap--narrow">
+      <p class="hero__container--title">Join a Community of Excited Learners</p>
+      <div class="align-text-center">
+        <a href="#" class="button">Explore Student Life</a>
+        <a href="#" class="button">Learn About Campus Events</a>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="module">
+    <section class="content-full">
+      <div class="page">
+        <div class="align-text-center">
+          <div class="story__heading">Research Centers and Labs</div>
+          <h2 class="story__title">Innovation Through Application</h2>
+          <p class="story__text">Learn to use data and technology to uncover insights and shape our world.</p>
+        </div>
+
+        <div class="feature-two-col">
+          <article class="feature-box zoom-image">
+            <div class="feed feed__item--small">
+              <div class="feed__card block__item--animate">
+
+                <a class="feature__image" href="#"><img src="//satyr.io/900x3:2" alt="placeholder"></a>
+
+                <div class="feature__card__content container--gray-light feature-two-col__match-height">
+                  <h3 class="feature__card__heading">JIMC Spiegel Digital and Database Research Center</h3>
+                  <div class="feed__item__content--text">
+                    <p>The five-course certificate program features core courses in consumer insight, research and IMC strategy as well as a variety of electives that enable Northwestern undergraduates to enhance their majors with a specialization in IMC.</p>
+                  </div>
+                  <a href="#" class="button__link">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="feature-box zoom-image">
+            <div class="feed feed__item--small">
+              <div class="feed__card block__item--animate">
+
+                <a class="feature__image" href="#"><img src="//satyr.io/900x3:2" alt="placeholder"></a>
+
+                <div class="feature__card__content container--gray-light feature-two-col__match-height">
+                  <h3 class="feature__card__heading">Medill Knight Lab</h3>
+                  <div class="feed__item__content--text">
+                    <p>The Knight Lab is a joint initiative of Northwestern’s Medill School of Journalism and the Robert R. McCormick School of Engineering and Applied Science. It combines the disciplines of journalism and computer science together to establish a cutting edge media innovation lab, one of the only ones of its kind.</p>
+                  </div>
+                  <a href="#" class="button__link">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <div class="module module--first">
+    <section class="content-full">
+      <div class="page">
+        <div class="align-text-center">
+          <h4 class="story__heading">Featured News</h4>
+        </div>
+        <hr>
+
+        <div class="feature-three-col">
+          <article class="feature-box feature__card__item">
+            <a href="#" class="button__tag">Students</a>
+            <a href="#"><img class="feature__card__img" src="//satyr.io/550x350" alt="placeholder"></a>
+            <h5><a href="#">New IMC initiatives connect insights from consumer data</a></h5>
+          </article>
+          <article class="feature-box feature__card__item">
+            <a href="#" class="button__tag">IMC</a>
+            <a href="#"><img class="feature__card__img" src="//satyr.io/550x350" alt="placeholder"></a>
+            <h5><a href="#">New IMC initiatives connect insights from consumer data</a></h5>
+          </article>
+          <article class="feature-box feature__card__item">
+            <a href="#" class="button__tag">Journalism</a><a href="#" class="button__tag">Students</a>
+            <a href="#"><img class="feature__card__img" src="//satyr.io/550x350" alt="placeholder"></a>
+            <h5><a href="#">New IMC initiatives connect insights from consumer data</a></h5>
+          </article>
+
+        </div>
+        <div class="align-text-center">
+          <a href="#" class="button">View More News</a>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+<script type="text/javascript">document.getElementsByTagName('body')[0].setAttribute('class','standard-page wider-page');</script>
+{% endblock %}

@@ -1,0 +1,220 @@
+$modal-overlay-background-color: #000 !default;
+$modal-overlay-background-alpha: 0.75 !default;
+$modal-overlay-background: rgba($modal-overlay-background-color, $modal-overlay-background-alpha);
+$modal-video-background: #000 !default;
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: $modal-overlay-background;
+}
+
+.modal__container {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.modal__content {
+
+}
+
+.modal__status {
+  text-align: center;
+}
+
+.modal__item {
+  display: block;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.modal__video {
+  position: relative;
+  padding-bottom: 56.25%;
+  background: $modal-video-background;
+}
+
+.modal__embed {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.modal__controls {
+
+}
+
+.modal__nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.modal__nav--previous {
+  left: 0;
+}
+
+.modal__nav--next {
+  right: 0;
+}
+
+.modal__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+// customizations
+
+.modal {
+  z-index: 5;
+}
+
+.modal__container {
+  max-width: 90rem;
+  margin: auto;
+  padding: 3rem 1rem;
+  @include mq(48em) {
+    padding: 3rem 2rem;
+  }
+  @include mq(80em) {
+    padding: 3rem;
+  }
+}
+
+.modal__overlay,
+.modal__status,
+.modal__controls,
+.modal__close {
+  transition: opacity 320ms ease;
+  opacity: 0;
+}
+
+.modal--active .modal__overlay,
+.modal--active .modal__controls,
+.modal--active .modal__close,
+.modal--loading .modal__status,
+.modal--loaded .modal__status {
+  opacity: 1;
+}
+
+.modal__item {
+  transform: scale(0.75);
+  transition: opacity 320ms ease, transform 320ms ease;
+  opacity: 0;
+}
+
+.modal--loaded .modal__item {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.modal__close {
+  @include fill($svgstore--close, $white);
+  width: 3rem;
+  height: 3rem;
+  background-position: center;
+  background-size: 2rem 2rem;
+  text-indent: -999rem;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+.modal__nav--icon {
+  display: block;
+  width: 1rem;
+  fill: $white;
+}
+
+//
+
+.program__modal {
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 300ms ease-in;
+  .program-active & {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.program__modal__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: $ms-purple;
+  overflow: auto;
+}
+
+.program__modal__close {
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  color: $white;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.program__modal__container {
+  margin-top: 5.5rem;
+  @include mq(64em) {
+    padding: 0 5rem;
+  }
+  h2, h3,li {
+    color: $white !important;
+  }
+  ul {
+    padding-left: 0.5rem;
+  }
+
+}
+
+.program__modal__boxes {
+  @include mq(72em) {
+    display: flex;
+  }
+
+}
+
+.program__modal__box {
+  margin: 2.5rem 1rem;
+  @include mq(48em) {
+    margin: 1rem auto 3rem;
+    width: 50%;
+  }
+
+  @include mq(72em) {
+    margin: 0 2rem;
+    width: 33.333%
+  }
+
+}
+
+
+.program__modal__header {
+  text-align: center;
+  display: block;
+  margin-bottom: 2rem !important;
+  @include mq(100em) {
+    margin-bottom: 4rem !important;
+  }
+}

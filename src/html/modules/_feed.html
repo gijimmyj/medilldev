@@ -1,0 +1,77 @@
+{% if feed.horizontal %}
+
+<div class="feed{% if feed.contentSmall %} feed__item--small{% endif %}{% if not feed.image %} feed__item--imageless{% endif %}">
+  <div class="feed__item">
+    <div class="feed__item__content">
+      <div class="feed__item__content--title">
+        <a href="#">MSJ student reports on LGBT and women's rights in South Africa</a>
+      </div>
+      {% if feed.date %}
+      <div class="feed__item__content--date">
+        MM/DD/YYYY
+      </div>
+      {% endif %}
+      <div class="feed__item__content--text">
+      {% if feed.textLong %}
+        <p>Alexandra Whittaker (MSJ16) has always been interested in issues related to women’s rights, and after researching more about the landscape of women’s rights activism and feminism in South Africa, she knew she wanted to report on something under that umbrella. After numerous talks and Skype sessions with professors and facilitators in South Africa, she was ready to launch.</p>
+      {% else %}
+        <p>Nancy Utley (BSJ77, MSJ78), president of Fox Searchlight Pictures, will speak to the undergraduate journalism students at the 10 a.m. ceremony.</p>
+      {% endif %}
+      </div>
+    </div>
+    {% if feed.image %}
+    <div class="feed__item__img">
+      <a href="#"><img src="//satyr.io/600x16:9" alt="placeholder"></a>
+    </div>
+    {% endif %}
+  </div>
+</div>
+
+{% elif feed.events %}
+
+<div class="feed{% if feed.contentSmall %} feed__item--small{% endif %}{% if not feed.image %} feed__item--imageless{% endif %}">
+  <div class="feed__item">
+    <div class="feed__item__content">
+      <div class="feed__item__content--title">
+        <a href="#">MSJ student reports on LGBT and women's rights in South Africa</a>
+      </div>
+      {% if feed.date %}
+      <div class="feed__item__content--date">
+        MM/DD/YYYY
+      </div>
+      {% endif %}
+      <div class="feed__item__content--text">
+      {% if feed.textLong %}
+        <p class="p--small">Alexandra Whittaker (MSJ16) has always been interested in issues related to women’s rights, and after researching more about the landscape of women’s rights activism and feminism in South Africa, she knew she wanted to report on something under that umbrella. After numerous talks and Skype sessions with professors and facilitators in South Africa, she was ready to launch.</p>
+      {% else %}
+        <p class="p--small">Nancy Utley (BSJ77, MSJ78), president of Fox Searchlight Pictures, will speak to the undergraduate journalism students at the 10 a.m. ceremony.</p>
+      {% endif %}
+      </div>
+    </div>
+    {% if feed.image %}
+    <div class="feed__item__img">
+      <a href="#"><img src="//satyr.io/600x16:9" alt="placeholder"></a>
+    </div>
+    {% endif %}
+  </div>
+</div>
+
+{% else %}
+
+<div class="feed feed__item--small">
+  <div class="feed__card">
+    <div class="feed__item__img">
+      <img src="//satyr.io/550x350" alt="placeholder">
+    </div>
+    <div class="feed__card__content">
+      <h3 class="feed__card__content--title">
+        <a href="#">Journalism</a>
+      </h3>
+      <div class="feed__item__content--text">
+        <p>Medill is preparing the next generation of journalists for the best jobs and leadership in media.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endif %}

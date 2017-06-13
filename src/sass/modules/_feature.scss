@@ -1,0 +1,71 @@
+.feature__container__image {
+  margin-top: -2rem;
+  overflow: hidden;
+}
+
+.feature__slider {
+  background: $white;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  margin-top: -2rem;
+  padding-bottom: 4rem;
+  @include mq(48em) {
+    margin-top: 0;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    padding-bottom: 3rem;
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    @include mq($max: 48em) {
+      top: 18%;
+    }
+  }
+}
+
+.feature__slider__heading {
+  font: 19px/24px $CamptonExtraBold;
+  color: $ms-purple;
+  border-bottom: .15rem solid $ms-gray-light;
+  padding: 0.5rem 0;
+  margin: 0 1rem 1rem 1rem;
+  text-align: center;
+  @include mq(48em) {
+    margin: 0 4rem 3rem 4rem;
+  }
+}
+
+.feature__card__heading {
+  color: $ms-purple !important;
+  margin-bottom: 1rem !important;
+}
+
+.feature__card__content {
+  padding: 2rem 1rem;
+  @include mq(32em) {
+    padding: 2rem;
+  }
+
+}
+
+.feature__card__img {
+  margin: 1rem 0;
+}
+
+.feature__card__item {
+  margin: 2rem 0;
+}
+
+.feature__image {
+  display: block;
+  overflow: hidden;
+  img {
+    transoform: scale(0);
+    transition: transform 300ms;
+    .feature__image__active & {
+      transform: scale(1.2);
+    }
+  }
+
+}

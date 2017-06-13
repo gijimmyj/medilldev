@@ -1,0 +1,113 @@
+.slider {
+  margin: 3rem 0;
+}
+
+
+.refresh-button {
+  display: none;
+  visibility: hidden;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  @include mq($max: 32em) {
+    top: 18%;
+  }
+  width: 35px;
+  height: 35px;
+  background-size: 35px 35px;
+}
+
+.swiper-button-prev {
+  background: url("#{$path-images}/icons/arrow-right-purple-white.svg") no-repeat;
+
+  transform: rotate(180deg);
+  left: 0;
+  right: auto;
+}
+
+.swiper-button-next {
+  background: url("#{$path-images}/icons/arrow-right-purple-white.svg") no-repeat;
+  right: 0;
+  left: auto;
+}
+
+
+.slider__pair__image {
+  margin: 0 auto;
+  width: 100%;
+  @include mq(64em) {
+    width: 50%;
+    float: left;
+  }
+}
+
+.slider__pair__image--alt {
+  padding: 0 1rem;
+  @include mq(64em) {
+    padding: 0 0 0 4rem;
+  }
+
+}
+
+.slider__pair__content {
+  background: $ms-gray-light;
+  overflow: hidden;
+  padding: 1rem;
+  @include mq(48em) {
+    padding: 2rem 4rem 2rem 2rem;
+
+  }
+}
+
+.slider__pair__content--alt {
+  background: $white;
+  @include mq(64em) {
+    padding: 0rem 4rem 2rem 2rem;
+  }
+}
+
+.slider__pair__content--title {
+  font: 30px/38px $CamptonBold;
+  color: $ms-purple !important;
+  margin-bottom: .5rem !important;
+}
+
+
+.slider__pair__content--text {
+
+}
+
+.slider__pair__content--title-alt {
+  margin-bottom: 0 !important;
+}
+
+.slider__social--icon {
+  display: inline-block;
+  width: 2rem;
+  background-image: none !important;
+  color: $ms-gray !important;
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+  font-size: 0;
+  text-indent: -9999px;
+  overflow: hidden;
+  @include mq(48em) {
+    width: 1rem;
+    margin-right: 0.5rem;
+  }
+  &:hover {
+    color: $ms-purple !important;
+  }
+}
+
+.slider__pair__faculty__title {
+  margin: 0;
+  font: 22px/28px $AkkuratProRegular;
+}
+
+.swiper-container {
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}

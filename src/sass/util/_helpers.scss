@@ -1,0 +1,39 @@
+.align-left,
+.align-right {
+  margin-bottom: 1.25rem;
+  @include mq(48em) {
+    max-width: 45%;
+  }
+}
+
+.align-left {
+  @include mq(48em) {
+    margin-right: 1.25rem;
+    float: left;
+  }
+}
+
+.align-right {
+  @include mq(48em) {
+    margin-left: 1.25rem;
+    float: right;
+  }
+}
+
+.align-small {
+  @include mq(48em) {
+    max-width: 25%;
+  }
+}
+
+.align-medium {
+  @include mq(48em) {
+    max-width: 50%;
+  }
+}
+
+.align-zero {
+  @include mq(48em) {
+    margin-bottom: 0;
+  }
+}

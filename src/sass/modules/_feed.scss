@@ -1,0 +1,102 @@
+.feed {
+
+}
+
+.feed__item {
+	@include clear;
+	background: $white;
+	padding: 4rem 0 0;
+	@include clear;
+	.feed__item--small & {
+		padding: 1.5rem;
+		margin-bottom: .15rem;
+	}
+}
+
+.feed__item__content {
+	@include mq(64em) {
+		float: left;
+		width: calc(100% - 26rem);
+		padding-right: 1rem;
+		.feed__item--small & {
+			float: left;
+			width: calc(100% - 18rem);
+			padding-right: 1rem;
+		}
+		.feed__item--imageless & {
+			width: 100%;
+			padding: 0;
+		}
+	}
+	p {
+		margin-bottom: 0 !important;
+	}
+}
+
+.feed__item__content--title a {
+	font: 40px/48px $CamptonBook;
+	@include underline($color: rgba($ms-green, .3), $position: 85%, $size: 0.0625rem);
+	&:hover {
+		@include underline($color: $ms-green, $position: 85%, $size: 0.0625rem);
+	}
+	.feed__item--small & {
+		font: 22px/28px $AkkuratProRegular;
+		@include underline($color: rgba($ms-green, .3), $position: 90%, $size: 0.0625rem);
+		&:hover {
+			@include underline($color: $ms-green, $position: 90%, $size: 0.0625rem);
+		}
+	}
+}
+
+.feed__item__content--text {
+	font: 24px/35px $AkkuratLight;
+	color: $ms-black;
+	.feed__item--small & {
+		font: 19px/30px $AkkuratProRegular;
+	}
+}
+
+
+.feed__item__content--date {
+	font: 15px/24px;
+	color: $ms-gray;
+}
+
+.feed__item__img {
+	overflow: hidden;
+	margin-top: 1rem;
+	@include mq(64em) {
+		margin-top: 0;
+	}
+}
+
+.feed__module {
+	padding: 5rem 0 1rem;
+	h3 {
+		margin-bottom: 2rem;
+	}
+	.pagination {
+    // padding-top: 0.25rem;
+  }
+}
+
+.feed__card {
+	text-align: left;
+}
+
+.feed__card__content--title {
+	margin-bottom: 0 !important;
+	a {
+		font: 27px/30px $CamptonBook;
+		@include underline($color: rgba($ms-green, .3), $position: 85%, $size: 0.0625rem);
+		&:hover {
+			@include underline($color: $ms-green, $position: 85%, $size: 0.0625rem);
+		}
+	}
+}
+
+
+
+.feed__card__content {
+	padding: 1rem 2rem;
+}

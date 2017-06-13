@@ -1,0 +1,85 @@
+// Font sizing
+@mixin font-size($sizeValue: 16) {
+  font-size: $sizeValue + px;
+  font-size: ($sizeValue / 16) + rem;
+}
+
+
+// clearfix
+@mixin clear {
+  &::before,
+  &::after {
+    content: '';
+    display: table;
+  }
+  &::after {
+    clear: both;
+  }
+}
+
+
+// Clear margin and padding
+@mixin clean {
+  margin: 0;
+  padding: 0;
+}
+
+// hide
+@mixin hide {
+  position: absolute;
+  left: -999rem;
+}
+
+// show
+@mixin show {
+  position: static;
+  left: auto;
+}
+
+// min-width media query
+@mixin mq($min: 0, $max: 0) {
+  @if ($min > 0 and $max > 0) {
+    @media (min-width: $min) and (max-width: $max) {
+      @content;
+    }
+  }
+  @else if ($min > 0) {
+    @media (min-width: $min) {
+      @content;
+    }
+  }
+  @else if ($max > 0) {
+    @media (max-width: $max) {
+      @content;
+    }
+  }
+}
+
+// svg color fill
+@mixin fill($svg, $color) {
+  $color: str-slice(#{$color}, 2);
+  $insert: 'fill%3D%22%23#{$color}%22%20';
+  $index: str-index($svg, '%3Csvg%20') + 9;
+  background-image: str-insert($svg, $insert, $index);
+}
+
+// spacing
+@mixin spacing($x: 1) {
+  margin-top: 1.25rem * $x;
+  margin-bottom: 1.25rem * $x;
+}
+
+@mixin borderFade($s: .3s) {
+  transition: $s linear border;
+}
+
+
+@mixin zero {
+  > :first-child {
+    margin-top: 0;
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,146 @@
+// buttons
+
+.content a.button, .content-full a.button, .content p.button a, .content-full p.button a, .hero a.button, #top-nav ul li a.button, .tl-slideshow a.button, input[type="submit"]  {
+  font: 18px $AkkuratProBold;
+  color: $white;
+  background: $nu-purple;
+  text-align: center;
+  text-decoration: none;
+  font-weight: normal;
+  margin-bottom: 1em;
+  padding: .8em 1em .7em 1em;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  min-width: 165px;
+  border: none;
+  transition: background-color 0.2s ease;
+
+
+  &:hover, &:focus, &:active {
+    color: $white;
+    text-decoration: none;
+    background-color: $ms-purple-dark;
+  }
+}
+
+.button {
+  & + & {
+    @include mq(64em) {
+      margin-left: .5em;
+    }
+  }
+}
+
+
+// special overrides
+.feature-box a.button{
+  // width: 100%;
+  text-align: center;
+  margin-bottom: 0;
+  // position: absolute;
+  bottom: 0;
+}
+
+.standard-plus a.button {
+  margin: 1.5rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  // top level slideshow for tablet/mobile
+  .caption a.button {
+    background: $nu-purple-30; // lightens purple over dark backgrounds
+    margin: 0;
+  }
+
+}
+
+.button__link {
+  position: relative;
+  font: 17px $AkkuratProBold !important;
+  padding-right: 1.5rem;
+  display: inline-block !important;
+  color: $ms-purple !important;
+  background-image: none !important;
+  &:before {
+    @include fill($svgstore--arrow-right, $ms-purple);
+    background-repeat: no-repeat;
+    width: 1rem;
+    height: 0.8rem;
+    position: absolute;
+    content: '';
+    speak: none;
+    line-height: 1;
+    display: block;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    transition: all 150ms ease-in-out;
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none !important;
+    color: $ms-purple-dark;
+    &:before {
+      right: -5px;
+    }
+  }
+}
+
+
+
+.button__tag__group {
+  padding-left: 0 !important;
+  display: none;
+  margin: 0;
+  @include mq(48em) {
+    margin: 1rem 0;
+    display: block;
+    background: transparent;
+  }
+  li {
+    list-style: none;
+    @include mq(48em) {
+      background: none !important;
+      padding: 0 !important;
+      display: inline-block;
+      margin-right: 0.25rem;
+      margin-left: 0 !important;
+    }
+  }
+}
+
+.button__tag {
+  font: 12px/24px $AkkuratProRegular;
+  text-transform: uppercase;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid $ms-purple;
+  background: $white;
+  border-radius: 1rem;
+  transition: all 150ms ease-in-out;
+  color: $ms-purple !important;
+  background-image: none !important;
+  margin-right: 0.5rem;
+  &:hover,
+  &:focus,
+  &:active {
+    background: $ms-purple;
+    color: $white !important;
+    text-decoration: none !important;
+  }
+}
+
+.button__white {
+  background-color: $white !important;
+  color: $ms-purple !important;
+  &:hover {
+    background-color: $ms-purple-dark !important;
+    color: $white !important;
+  }
+}

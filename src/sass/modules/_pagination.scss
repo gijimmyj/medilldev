@@ -1,0 +1,60 @@
+// pagination
+ul.pagination {
+    margin: 2.5em 0 2em;
+    padding-left: 0 !important;
+    text-align: center;
+
+    a {
+        background-image: none;
+        &:hover {
+            background-image: none;
+        }
+    }
+
+    li {
+        display: inline;
+        padding: 0 !important;
+        background-image: none !important;
+        margin-left: 0;
+    }
+
+    .current-page a {
+        background: #616161 none repeat scroll 0 0;
+        color: $white;
+    }
+}
+
+.pagination__left--icon,
+.pagination__right--icon {
+    display: inline-block;
+    width: 0.8rem;
+    color: $ms-purple;
+    height: 17px;
+}
+
+.pagination__left--icon {
+    margin-right: .5rem;
+}
+
+.pagination__right--icon {
+    margin-left: .5rem;
+}
+
+
+.pagination__link {
+    background: $ms-gray-light;
+    color: $ms-purple !important;
+    font: 16px $AkkuratProBold;
+    display: inline-block;
+    margin: 0 .2em;
+    padding: .5rem .8rem;
+    text-decoration: none;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+        background-color: $nu-purple;
+        color: $white !important;
+    }
+}

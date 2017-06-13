@@ -1,0 +1,45 @@
+// mixins and extends
+
+// mixins
+@mixin clearfix() {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+// clearfix
+@mixin clear {
+  &::before,
+  &::after {
+    content: '';
+    display: table;
+  }
+  &::after {
+    clear: both;
+  }
+}
+
+@mixin borderFade($s: .3s) {
+	-webkit-transition: $s linear border;
+	-moz-transition: $s linear border;
+	-ms-transition: $s linear border;
+	-o-transition: $s linear border;
+	transition: $s linear border;
+}
+
+// extends
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+
+@mixin underline($color: currentColor, $position: 90%, $size: 0.0625rem) {
+  background-image: linear-gradient($color, $color);
+  background-repeat: repeat-x;
+  background-position: 0 $position;
+  background-size: 100% $size;
+}

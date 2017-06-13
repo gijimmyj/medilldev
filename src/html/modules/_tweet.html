@@ -1,0 +1,28 @@
+<div class="tweet__container">
+  <span class="tL"></span>
+  <span class="tR"></span>
+  <span class="bR"></span>
+  <span class="bL"></span>
+
+
+
+  <blockquote class="blockquote">
+    {% if tweet.noImg %}
+    <div class="tweet__img blockquote__no-img">
+      <span class="blockquote__no-img--icon">{{ svgstore('quote') }}</span>
+    </div>
+    {% else %}
+    <div class="tweet__img blockquote__img">
+      <img src="//satyr.io/150" alt="placeholder">
+    </div>
+    {% endif %}
+    <div class="blockquote__content">
+      <div class="blockquote__content__twitter">
+        <span class="blockquote__twitter__name">Firstname Lastname</span>
+        <a href="#" class="blockquote__twitter__handle">@TwitterHandle</a>
+        <span class="blockquote__twitter__icon">{{ svgstore('Social-Twitter') }}</span>
+      </div>
+      <q><a href="#">@MedillScool's</a> IMC program is part of my professional DNA - I've used what I learned in every job since graduation! <a href="#">#Thanksmedill</a></q>
+    </div>
+  </blockquote>
+</div>

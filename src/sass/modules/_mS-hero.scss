@@ -1,0 +1,233 @@
+.hero__container {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  &:before {
+    position: absolute;
+    content: '';
+    background: rgba($black, .5);
+    width: 100%;
+    top: 0;
+    bottom: 0rem;
+  }
+}
+
+.hero__wrap {
+  position: relative;
+  padding-bottom: 80%;
+  @include mq(32em) {
+    padding-bottom: 60%;
+  }
+  @include mq(48em) {
+    padding-bottom: 50%;
+  }
+  @include mq(64em) {
+    padding-bottom: 34%;
+  }
+}
+
+.hero__container--alt {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero--video {
+  .mobile & {
+    position: relative;
+    background-position: top;
+    background-size: cover;
+    padding-bottom: 50%;
+  }
+
+}
+
+.hero__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $white;
+  text-transform: uppercase;
+  font: $AkkuratProBold !important;
+  text-decoration: none;
+  &:hover {
+    .hero__play--icon {
+      color: rgba($white, 1);
+    }
+  }
+}
+
+
+
+.hero__play--icon {
+  display: block;
+  color: rgba($white, 0.8);
+  width: 3.5rem;
+  margin: 0 auto 0.2rem;
+  transition: color 300ms ease;
+}
+
+.hero__container--title {
+  text-align: center;
+  font: 30px/38px $CamptonBook;
+  color: $white;
+  text-shadow: 0px 1px 4.5px rgba(0, 0, 0, 0.3);
+  @include mq(48em) {
+    font: 52px/62px $CamptonBook;
+  }
+}
+
+.hero__container__content {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem;
+}
+
+
+.home__hero--header {
+  font-size: 65%;
+  font-family: $CamptonBook;
+  padding: 0 1rem;
+  line-height: 1;
+  display: inline-block;
+  @include mq(66.250em) {
+    font-size: 100%;
+  }
+}
+
+.home__hero--title {
+  font-family: $CamptonBold;
+  font-size: 35%;
+  line-height: 1;
+  margin-top: 1rem;
+  margin-bottom: .2rem;
+  display: inline-block;
+
+}
+
+.home__hero__text__wrapper {
+  overflow: hidden;
+  display: block;
+}
+
+.home__hero__content {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  color: $white;
+  text-shadow: 0px 1px 4.5px rgba(0, 0, 0, 0.3);
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -60%);
+  z-index: 2;
+  padding: 0 1rem;
+  font-size: 3.765rem;
+  opacity: 0;
+  @include mq(66.250em) {
+    font-size: 4.706rem
+  }
+  @include mq(97.313em) {
+    font-size: 7.059rem;
+  }
+}
+
+.home__hero__cta {
+  position: absolute;
+  bottom: 2rem;
+  background-color: transparent;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  z-index: 10;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.home__hero__cta--icon {
+  display: block;
+  width: 2rem;
+  color: $white;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.home__hero__cta--bg {
+  position: absolute;
+  display: block;
+  width: 1.8rem;
+  background: $ms-orange;
+  opacity: 1;
+  height: 0;
+  bottom: 0;
+  opacity: 0;
+  overflow: hidden;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+}
+
+.home__hero__svg {
+  position: absolute;
+  z-index: 1;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: block;
+}
+
+
+.hero__video {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.hero__video__media {
+  width: 100%;
+  display: block;
+}
+
+@keyframes scaleImage {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+
+.home__hero__container {
+  height: calc(100vh - 133px);
+  background-size: cover;
+  background-position: top;
+  min-height: 25rem;
+  backface-visibility: hidden;
+  animation-name: scaleImage;
+  animation-duration: 7000ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  &:before {
+    position: absolute;
+    content: '';
+    background: rgba($black, .3);
+    width: 100%;
+    top: 0;
+    bottom: 0rem;
+  }
+  @include mq(769px) {
+    height: calc(100vh - 231px);
+  }
+}
+
+.left-line,
+.right-line {
+  // opacity: 0;
+  stroke: $ms-orange;
+}
+

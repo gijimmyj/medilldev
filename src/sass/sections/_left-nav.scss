@@ -1,0 +1,146 @@
+// left navigation
+
+.left-nav {
+  width: 16rem;
+  float: left;
+  font-family: $AkkuratProBold;
+  margin-bottom: 3rem;
+    outline: none !important; // removes outline from tabindex
+    .expander3 {
+        margin: 0;
+    }
+    .mobile-back-to-top {
+        display: none;
+    }
+
+    h2 {
+        border-bottom: 4px solid $light-grey;
+        min-height: 30px;
+        padding-bottom: .5rem;
+        margin-bottom: 2rem;
+        font: 18px/1.5rem $AkkuratProRegular;
+        text-transform: uppercase;
+
+        a {
+            color: $nu-purple;
+            text-decoration: none;
+        }
+    }
+
+    ul {
+        list-style: none;
+
+        ul {
+            margin-top: 1rem;
+            // padding-left: .3rem;
+
+            ul {
+                margin-top: 1rem;
+                padding-left: 0;
+            }
+
+            &.open { // new
+                border-left: 4px solid $light-grey;
+            }
+        }
+    }
+
+    li {
+        padding-bottom: 1rem;
+        font-size: 18px;
+        line-height: 1.4em;
+        font-family: $AkkuratProBold;
+
+        a {
+            color: $rich-black-50;
+            text-decoration: none;
+            display: block;
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+            &.active {
+                color: $nu-purple;
+
+            }
+        }
+
+        li {
+
+            padding-bottom:1rem;
+            font-size: 14px;
+            a {
+                padding-left: .5rem;
+                &.active,
+                &:active {
+                    color: $ms-purple;
+                    margin-left: -4px;
+                    border-left: 4px solid $ms-purple;
+                    text-decoration: none;
+                }
+                &:focus,
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        &:last-child {
+            padding-bottom: .3rem;
+        }
+
+        ul.open li:last-child {
+            padding-bottom: 0;
+        }
+    }
+}
+
+// media queries
+@media screen and (max-width: 768px) {
+    .left-nav {
+        width: 100%;
+        margin-bottom: 0;
+        .left-nav-control {
+            margin-bottom: 1rem;
+        }
+
+        .expander {
+
+            h2 {
+                font: 27px/34px $CamptonBook;
+                padding-bottom: 0;
+                border-bottom: 0;
+                > a {
+                    font: 27px/34px $CamptonBook;
+                    display: block;
+                    margin: 0;
+                }
+            }
+
+            > div {
+                margin: 1rem 2.5rem;
+
+            }
+        }
+
+        .expander3 {
+            margin: 2rem 0;
+
+            h2 {
+                background: $nu-purple;
+
+                > a {
+                    font-size: 18px;
+                    background: url("#{$path-images}/icons/arrow-right-white.svg") no-repeat right 1rem center / 12px 18px;
+                    padding: .6em 3rem .5rem 1rem;
+                    color: $white;
+                }
+
+                &.open a {
+                    background: url("#{$path-images}/icons/arrow-down-white.svg") no-repeat right 1rem center / 18px 12px;
+                }
+            }
+        }
+    }
+}

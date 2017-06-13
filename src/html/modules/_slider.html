@@ -1,0 +1,106 @@
+<div class="swiper-container">
+  <div class="swiper-wrapper">
+
+
+
+    <div class="swiper-slide slider__pair slider__match-height">
+
+      {% if slider.alt %}
+      <img class="slider__pair__image slider__pair__image--alt" src="//satyr.io/1000x660/1" alt="This is an alt tag for the second image">
+      {% else %}
+      <img class="slider__pair__image" src="//satyr.io/640x2:1/1" alt="This is an alt tag for the second image">
+      {% endif %}
+
+      <div class="slider__pair__content slider__match-height{%if slider.alt%} slider__pair__content--alt{% endif %}">
+
+        {% if slider.alt %}
+        <h3 class="slider__pair__content--title-alt">Beth Bennet</h3>
+        <p class="slider__pair__faculty__title">Assistant Professor and Director of Undergraduate Journalism Program</p>
+        <a href="#" class="slider__social--icon" aria-label="Twitter">{{ svgstore('Social-Twitter') }} Twitter</a>
+        <a href="#" class="slider__social--icon" aria-label="Linkedin">{{ svgstore('Social-LinkedIn') }} LinkedIn</a>
+        {% else %}
+        <h3 class="slider__pair__content--title">
+          IMC Undergraduate Certificate
+        </h3>
+        {% endif %}
+
+        <p>The five-course certificate program features core courses in consumer insight, research and IMC strategy as well as a variety of electives that enable Northwestern undergraduates to enhance their majors with a specialization in IMC.</p>
+
+        {% if slider.alt %}
+        <a class="button__link" href="#">Faculty page</a><br>
+        <a class="button__link" href="#">Undergraduate Journalism Program</a>
+        {% else %}
+        <a class="button__link" href="#">Learn More</a>
+        {% endif %}
+      </div>
+    </div>
+
+
+
+    <div class="swiper-slide slider__pair slider__match-height">
+      {% if slider.alt %}
+      <img class="slider__pair__image slider__pair__image--alt" src="//satyr.io/1000x660/2" alt="This is an alt tag for the second image">
+      {% else %}
+      <img class="slider__pair__image" src="//satyr.io/640x2:1/2" alt="This is an alt tag for the second image">
+      {% endif %}
+      <div class="slider__pair__content slider__match-height{%if slider.alt%} slider__pair__content--alt{% endif %}">
+
+       {% if slider.alt %}
+       <h3 class="slider__pair__content--title-alt">Beth Bennet</h3>
+       <p class="slider__pair__faculty__title">Assistant Professor and Director of Undergraduate Journalism Program</p>
+       <a href="#" class="slider__social--icon">{{ svgstore('Social-Twitter') }} Twitter</a>
+       <a href="#" class="slider__social--icon">{{ svgstore('Social-LinkedIn') }} LinkedIn</a>
+       {% else %}
+       <h3 class="slider__pair__content--title">
+        IMC Undergraduate Certificate
+      </h3>
+      {% endif %}
+
+      <p>The five-course certificate program features core courses in consumer insight.</p>
+
+      {% if slider.alt %}
+      <a class="button__link" href="#">Faculty page</a><br>
+      <a class="button__link" href="#">Undergraduate Journalism Program</a>
+      {% else %}
+      <a class="button__link" href="#">Learn More</a>
+      {% endif %}
+    </div>
+  </div>
+
+
+
+  <div class="swiper-slide slider__pair slider__match-height">
+    {% if slider.alt %}
+    <img class="slider__pair__image slider__pair__image--alt" src="//satyr.io/1000x660/3" alt="This is an alt tag for the second image">
+    {% else %}
+    <img class="slider__pair__image" src="//satyr.io/640x2:1/3" alt="This is an alt tag for the second image">
+    {% endif %}
+    <div class="slider__pair__content slider__match-height{%if slider.alt%} slider__pair__content--alt{% endif %}">
+
+      {% if slider.alt %}
+      <h3 class="slider__pair__content--title-alt">Beth Bennet</h3>
+      <p class="slider__pair__faculty__title">Assistant Professor and Director of Undergraduate Journalism Program</p>
+      <a href="#" class="slider__social--icon">{{ svgstore('Social-Twitter') }} Twitter</a>
+      <a href="#" class="slider__social--icon">{{ svgstore('Social-LinkedIn') }} LinkedIn</a>
+      {% else %}
+      <h3 class="slider__pair__content--title">
+        IMC Undergraduate Certificate
+      </h3>
+      {% endif %}
+
+      <p>The five-course certificate program features core courses in consumer insight, research and IMC strategy as well as a variety of electives that enable Northwestern undergraduates to enhance their majors with a specialization in IMC.</p>
+
+      {% if slider.alt %}
+      <a class="button__link" href="#">Faculty page</a><br>
+      <a class="button__link" href="#">Undergraduate Journalism Program</a>
+      {% else %}
+      <a class="button__link" href="#">Learn More</a>
+      {% endif %}
+    </div>
+  </div>
+
+</div>
+<div class="swiper-button-next"></div>
+<div class="swiper-button-next refresh-button" aria-disabled="false" tabindex="0" role="button" aria-label="Return to first slide" style="background-color: rgb(78, 42, 132); background-image: url('//common.northwestern.edu/v8/css/images/icons/refresh.svg');"></div>
+<div class="swiper-button-prev"></div>
+</div>

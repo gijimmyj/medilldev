@@ -1,0 +1,37 @@
+{
+   "locations":[
+      {
+         "id":1,
+         "title":"Evanston",
+         "description":"Etiam in purus vehicula, euismod nunc vel, ornare nisi. Nulla vel semper felis, at elementum sem. Sed efficitur consequat dui cursus pharetra. Morbi rhoncus ullamcorper velit bibendum pretium. Etiam dapibus ullamcorper nibh, eget gravida orci accumsan sit amet. Sed ut interdum leo, non auctor diam.",
+         "linkUrl":"#",
+         "linkText": "Learn More",
+         "lat":42.058318,
+         "lng":-87.684146,
+         "imageUrl":"http://placehold.it/864x450/1",
+         "zIndex":1
+      },
+      {
+         "id":2,
+         "title":"San Fransisco",
+         "description": "Medill’s San Francisco campus will open in summer 2016 along with Northwestern’s McCormick School of Engineering and Applied Science. The new campus will further enhance the school’s leadership at the intersection of engineering, computer science, journalism and integrated marketing communications.",
+         "linkUrl":"#",
+         "linkText":"Read More",
+         "lat":37.774929,
+         "lng":-122.419416,
+         "imageUrl":"http://placehold.it/864x450/2",
+         "zIndex":1
+      },
+      {
+         "id":3,
+         "title":"Japan",
+         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fermentum eget neque sed viverra. Aliquam scelerisque dictum nibh eget tempor. Nulla at sem ut odio auctor auctor.",
+         "linkUrl":"#",
+         "linkText":"Learn More",
+         "lat":35.709026,
+         "lng":139.731992,
+         "imageUrl":"http://placehold.it/864x450/3",
+         "zIndex":1
+      }
+   ]
+}

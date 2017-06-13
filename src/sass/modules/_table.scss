@@ -1,0 +1,66 @@
+    table {
+        width: 100%;
+        margin: 1em 0 0 0;
+        font-family: $AkkuratProRegular;
+        line-height: 1.5em;
+
+        th {
+            background: $nu-purple;
+            font: 21px $AkkuratProBold;
+            color: $white;
+            padding: .7rem 1rem .7rem 1rem;
+            text-align: left;
+            border: 2px solid $white;
+        }
+
+        td {
+            padding: .7rem 1rem .7rem 1rem;
+            border: 2px solid $white;
+            vertical-align: top;
+        }
+
+        tr.stripe td {
+            background: $light-grey;
+        }
+
+        tr.hover td {
+            background: $nu-purple-10;
+            color: $rich-black-80;
+        }
+
+        &.table-no-hover { // removes hover state on rows
+
+            tr {
+
+                &.hover td {
+                    background: none;
+                    color: inherit;
+                }
+
+                &.hover.stripe td {
+                    background: $light-grey;
+                }
+            }
+        }
+
+        &.table-center-header {
+
+            th {
+                text-align: center;
+            }
+        }
+
+        ul {
+            margin-left: 0;
+            padding-top: .5rem;
+        }
+    }
+
+
+.responsive-table { // added by jquery (scripts.js) to enable mobile scrolling on large tables
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch; // adds scrollbar when swiping table for ios
+  width: 100%;
+  margin: 0 0 2em 0;
+}

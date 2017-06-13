@@ -1,0 +1,231 @@
+---
+title: Landing Page
+---
+
+{% extends "layouts/_default.html" %}
+
+
+{% block content %}
+
+
+<div class="hero__container hero--video" data-background-image="//placehold.it/1024x341">
+
+  <div class="hero__video">
+    <video class="hero__video__media" autoplay loop muted>
+      <source src="videos/video.mp4" type="video/mp4" />
+    </video>
+  </div>
+
+  <div class="hero__container__content">
+    <p class="hero__container--title">Integrated Marketing Communications</p>
+  </div>
+</div>
+
+
+
+
+<div class="module module--first" id="main-content">
+  <section class="background-select content-full">
+    <div class="background-select-image" style="background: url('//common.northwestern.edu/v8/css/images/purple-slashes-standard.jpg') no-repeat center / cover">
+      <div class="module module--dark">
+        <div class="page">
+          <div class="wrap wrap--narrow">
+            <h2 class="header--white">The Integrated Marketing Communications Degree (IMC) was founded at Medill.</h2>
+            <p class="p--intro">IMC started at Medill, and here, you’ll learn to create innovative marketing communications strategies and solve business problems by working collaboratively with both global companies and your peers. Our three graduate programs and one undergraduate certificate will teach you the IMC “way of thinking” that balances qualitative and quantitative components. Medill IMC will help set you apart from others in the industry.</p>
+
+            <div class="align-text-center">
+              <a href="#" class="button button__white">Apply Now</a>
+              <a href="#" class="button button__white">Request Information</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="module">
+  <section class="content-full">
+
+    <div class="page">
+      <div class="align-text-center">
+        <h3 class="h2 block__heading">Our Programs</h3>
+      </div>
+      <div class="feature-three-col">
+        <div class="feature-box">
+          {% set block = {animate: true, programs: true, name: 'IMC Full-Time Master\'s Program',title: 'Evanston Campus'} %}
+          {% include "modules/_block.html" %}
+
+        </div>
+        <div class="feature-box">
+          {% set block = {animate: true, programs: true, text: 'Long', name: 'IMC Part-Time Master\'s Program', title: 'Downtown, Chicago Campus'} %}
+          {% include "modules/_block.html" %}
+        </div>
+        <div class="feature-box">
+          {% set block = {animate: true, programs: true, name: 'IMC Online Master\'s Program', title: 'Online'} %}
+          {% include "modules/_block.html" %}
+        </div>
+      </div>
+      <div class="align-text-center module__button">
+        <a href="#" class="button open-program-modal">Compare Programs</a>
+
+
+      </div>
+      <div class="program__modal__wrapper">
+        <div class="program__modal">
+          <div class="program__modal__overlay">
+            <button class="program__modal__close" aria-label="Close">{{ svgstore('close') }}</button>
+            <div class="program__modal__container">
+
+              <h2 class="program__modal__header">IMC Programs at a Glance</h2>
+              <div class="program__modal__boxes">
+                <div class="program__modal__box">
+
+                  <h3>IMC Full-Time Master’s Program</h3>
+                  <ul>
+                    <li>Evanston campus</li>
+                    <li>Five, 10-week quarters</li>
+                    <li>15 courses</li>
+                    <li>One summer immersion quarter with top companies</li>
+                    <li>Five specializations</li>
+                    <li>Opportunity to enroll in Media Management at Kellog School of Management</li>
+                    <li>Opportunities for international study</li>
+                  </ul>
+                  <a href="#" class="button button__white">Learn More About Full-Time</a>
+                </div>
+
+                <div class="program__modal__box">
+                  <h3>IMC Part-Time Master’s Program</h3>
+                  <ul>
+                    <li>Downtown Chicago campus</li>
+                    <li>Two years (evening classes once a week)</li>
+                    <li>15 courses</li>
+                    <li>Five specializations</li>
+                    <li>Opportunities for international study</li>
+                  </ul>
+
+                  <a href="#" class="button button__white">Learn More About Part-Time</a>
+                </div>
+
+                <div class="program__modal__box">
+                  <h3>IMC Online Master’s Program</h3>
+
+                  <ul>
+                    <li>Online</li>
+                    <li>Complete at your own pace</li>
+                    <li>13 Courses</li>
+                    <li>Five specializations</li>
+                    <li>Same faculty as full-time and part-time programs</li>
+                  </ul>
+                  <a href="#" class="button button__white">Learn More About Online</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <div class="feature-three-col">
+        <div class="feature-box">
+          <div class="block">
+            <div class="block__item block__item--animate">
+              <div class="block__item__content">
+                <div class="block__item__content--name">
+                  IMC Undergraduate Certificate
+                </div>
+                <p class="block__item__content--text">
+                  The five-course certificate program features core courses in consumer insight, research and IMC strategy as well as a variety of electives that enable Northwestern undergraduates to enhance their majors with a specialization in IMC.
+                </p>
+                <a href="#" class="button__link">Visit Program</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-box">
+          <div class="block">
+            <div class="block__item block__item--animate">
+              <div class="block__item__content">
+                <div class="block__item__content--name">
+                  Online Open Courses (MOOCs)
+                </div>
+                <p class="block__item__content--text">
+                  Northwestern has partnered with the online learning platform Coursera to provide universal access to short courses in areas our faculty teach and research.
+                </p>
+                <a href="#" class="button__link">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="module">
+  <div class="hero__container" style="background-image: url(//satyr.io/2600x3:1);">
+    <div class="hero__wrap">
+      <a class="hero__play" href="https://www.youtube.com/watch?v=mPq-PwMliHk" data-modal>
+        <span class="hero__play--icon">{{ svgstore('play') }}</span>
+        We are Medill IMC
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<div class="module">
+  <div class="content-full">
+    <div class="page">
+      <div class="wrap wrap--narrow">
+        {% include "modules/_tweet.html" %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="module">
+  <div class="content-full">
+    <section>
+      {% include "modules/_banner.html" %}
+    </section>
+  </div>
+</div>
+
+<div class="module">
+  <div class="page">
+    <script src="//assets.juicer.io/embed.js" type="text/javascript"></script>
+    <link href="//assets.juicer.io/embed.css" media="all" rel="stylesheet" type="text/css" />
+    <ul class="juicer-feed" data-feed-id="medill" data-pages="1" data-per="15"></ul>
+  </div>
+</div>
+
+
+<div class="module">
+  <section>
+    <div class="content-full">
+      <div class="page">
+        <hr class="hr--color">
+        <div class="story__container">
+          <div class="align-text-center">
+            <div class="story__heading">Our Story</div>
+            <h2 class="story__title">
+              The History of IMC at Medill
+            </h2>
+
+            <div class="story__text">Lorem ipsum dolor sit amet, tempus amet sapien mollis justo dolor amet.</div>
+          </div>
+
+
+          <iframe class="timeline" title="Timeline" src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1YcbkYWvF8mlc-mBdYKSauXfRhEfaRkIETqidzseuc-g&font=Default&lang=en&initial_zoom=2&height=650' height='650'></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+
+<script type="text/javascript">document.getElementsByTagName('body')[0].setAttribute('class','standard-page wider-page');</script>
+{% endblock %}
