@@ -1,7 +1,7 @@
 .image__caption {
   background: $ms-gray-light;
   padding: 1rem;
-  margin-bottom: 1rem;
+  margin: 0 0 2rem 0;
   @include mq(48em) {
     text-align: center;
   }

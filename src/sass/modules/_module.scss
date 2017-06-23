@@ -1,7 +1,7 @@
 .module {
   padding: 2rem 0;
   @include mq(64em) {
-    padding: 5rem 0;
+    padding: 2rem 0;
   }
   .page {
     margin-top: 0;
