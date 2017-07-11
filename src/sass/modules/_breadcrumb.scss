@@ -16,6 +16,7 @@ ul#breadcrumbs {
         margin-right: 0.5rem;
         &:before {
             position: absolute;
+
             content: '';
             @include fill($svgstore--arrow-right, $ms-purple);
             background-repeat: no-repeat;
@@ -35,9 +36,11 @@ ul#breadcrumbs {
 
     a {
         color: $ms-black;
+        white-space: nowrap;
         background-image: none;
         &:hover {
             text-decoration: underline;
+
         }
     }
 }
