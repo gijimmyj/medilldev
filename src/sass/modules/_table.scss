@@ -27,14 +27,13 @@
             background: $light-purple;
         }
 
-        .light-purple  {
+
+
+        .light-purple .stripe .hover {
             background: $light-purple;
         }
 
-        tr.hover td {
-            background: $nu-purple-10;
-            color: $rich-black-80;
-        }
+
 
         &.table-no-hover { // removes hover state on rows
 
@@ -48,6 +47,11 @@
                 &.hover.stripe td {
                     background: $light-grey;
                 }
+
+                &.hover.light-purple td {
+                    background: $light-purple;
+                }
+
             }
         }
 
