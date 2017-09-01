@@ -5,7 +5,7 @@
   &:before {
     position: absolute;
     content: '';
-    background: rgba($black, .5);
+    //background: rgba($black, .1);
     width: 100%;
     top: 0;
     bottom: 0rem;
@@ -230,4 +230,3 @@
   // opacity: 0;
   stroke: $ms-orange;
 }
-
