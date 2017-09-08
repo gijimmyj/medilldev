@@ -37,3 +37,17 @@
     margin-bottom: 0;
   }
 }
+
+.show-mobile {
+  display: block;
+  @include mq(48em) {
+    display: none;
+  }
+}
+
+.show-desktop {
+  display: none;
+  @include mq(48em) {
+    display: block;
+  }
+}

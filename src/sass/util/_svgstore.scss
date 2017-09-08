@@ -15,6 +15,56 @@
   }
 }
 
+$svgstore--M: url(data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20499.1%20462.4%22%3E%3Cpath%20d%3D%22M499%20.1v462H384V230.5L281%20389v1.1h-63V389L114.5%20229l.5%20233.1H0V.1h85.7l163.9%20246.8L413.4.1H499z%22%2F%3E%3C%2Fsvg%3E);
+
+%svgstore--M {
+  background-image: url(data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20499.1%20462.4%22%3E%3Cpath%20d%3D%22M499%20.1v462H384V230.5L281%20389v1.1h-63V389L114.5%20229l.5%20233.1H0V.1h85.7l163.9%20246.8L413.4.1H499z%22%2F%3E%3C%2Fsvg%3E);
+}
+
+.svgstore--M {
+  padding-bottom: 462 / 499 * 100%;
+}
+
+$svgstore--Medill_M: url(data:image/svg+xml;charset=utf8,%3Csvg%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20380%20347%22%3E%3Cstyle%3E.st0%7Bfill%3Anone%3Bstroke%3A%23000000%3Bstroke-width%3A100%3B%7D%3C%2Fstyle%3E%3Cpath%20class%3D%22st0%22%20d%3D%22M334.3%200v347.2%22%2F%3E%3Cpath%20d%3D%22M144.8%20314.6L94.9%20213.5%2095-.6%20189.7%20179%20284.3-1.3%20285%20212l-50.4%20102.6h-89.8z%22%2F%3E%3Cpath%20class%3D%22st0%22%20d%3D%22M45%20347.2V0%22%2F%3E%3C%2Fsvg%3E);
+
+%svgstore--Medill_M {
+  background-image: url(data:image/svg+xml;charset=utf8,%3Csvg%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20380%20347%22%3E%3Cstyle%3E.st0%7Bfill%3Anone%3Bstroke%3A%23000000%3Bstroke-width%3A100%3B%7D%3C%2Fstyle%3E%3Cpath%20class%3D%22st0%22%20d%3D%22M334.3%200v347.2%22%2F%3E%3Cpath%20d%3D%22M144.8%20314.6L94.9%20213.5%2095-.6%20189.7%20179%20284.3-1.3%20285%20212l-50.4%20102.6h-89.8z%22%2F%3E%3Cpath%20class%3D%22st0%22%20d%3D%22M45%20347.2V0%22%2F%3E%3C%2Fsvg%3E);
+}
+
+.svgstore--Medill_M {
+  padding-bottom: 347 / 380 * 100%;
+}
+
+$svgstore--Medill_Slash: url(data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20545.9%20539%22%3E%3Cpath%20d%3D%22M109.8%200H0v29.5L436.1%20539h109.8v-29.5%22%2F%3E%3C%2Fsvg%3E);
+
+%svgstore--Medill_Slash {
+  background-image: url(data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20545.9%20539%22%3E%3Cpath%20d%3D%22M109.8%200H0v29.5L436.1%20539h109.8v-29.5%22%2F%3E%3C%2Fsvg%3E);
+}
+
+.svgstore--Medill_Slash {
+  padding-bottom: 539 / 545 * 100%;
+}
+
+$svgstore--Social-LinkedIn: url(data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224.8%22%20height%3D%2222.6%22%20viewBox%3D%220%200%2024.8%2022.6%22%3E%3Cpath%20d%3D%22M5.9%202.7c0%201.5-1.1%202.7-3%202.7C1.1%205.3%200%204.1%200%202.7%200%201.1%201.2%200%203%200c1.7%200%202.8%201.1%202.9%202.7zM.6%2022.6h4.8V7.2H.6v15.4zM18.7%207.1c-2.8%200-4.5%201.5-4.8%202.6V7.2H8.4c.1%201.3%200%2015.3%200%2015.3h5.4v-8.3c0-.5%200-.9.1-1.3.4-.9%201.2-1.9%202.6-1.9%201.9%200%202.7%201.4%202.7%203.5v7.9h5.5V14c.1-4.7-2.6-6.9-6-6.9z%22%2F%3E%3C%2Fsvg%3E);
+
+%svgstore--Social-LinkedIn {
+  background-image: url(data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224.8%22%20height%3D%2222.6%22%20viewBox%3D%220%200%2024.8%2022.6%22%3E%3Cpath%20d%3D%22M5.9%202.7c0%201.5-1.1%202.7-3%202.7C1.1%205.3%200%204.1%200%202.7%200%201.1%201.2%200%203%200c1.7%200%202.8%201.1%202.9%202.7zM.6%2022.6h4.8V7.2H.6v15.4zM18.7%207.1c-2.8%200-4.5%201.5-4.8%202.6V7.2H8.4c.1%201.3%200%2015.3%200%2015.3h5.4v-8.3c0-.5%200-.9.1-1.3.4-.9%201.2-1.9%202.6-1.9%201.9%200%202.7%201.4%202.7%203.5v7.9h5.5V14c.1-4.7-2.6-6.9-6-6.9z%22%2F%3E%3C%2Fsvg%3E);
+}
+
+.svgstore--Social-LinkedIn {
+  padding-bottom: 22 / 24 * 100%;
+}
+
+$svgstore--Social-Twitter: url(data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2216%22%20viewBox%3D%220%200%2020%2016%22%3E%3Ctitle%3ETwitter%3C%2Ftitle%3E%3Cpath%20d%3D%22M20%201.9c-.7.3-1.5.5-2.4.6.8-.5%201.5-1.3%201.8-2.2-.8.5-1.7.8-2.6%201C16.1.5%2015%200%2013.8%200c-2.3%200-4.1%201.8-4.1%204%200%20.3%200%20.6.1.9C6.4%204.8%203.4%203.2%201.4.7%201%201.3.8%202%20.8%202.8c0%201.4.7%202.6%201.8%203.4-.6-.1-1.2-.3-1.8-.6%200%202%201.4%203.6%203.3%204-.3.1-.7.2-1.1.2-.3%200-.5%200-.8-.1.5%201.6%202%202.8%203.8%202.8-1.4%201.1-3.2%201.7-5.1%201.7-.3%200-.7%200-1-.1C1.8%2015.3%204%2016%206.3%2016%2013.8%2016%2018%209.8%2018%204.5V4c.8-.6%201.5-1.3%202-2.1%22%2F%3E%3C%2Fsvg%3E);
+
+%svgstore--Social-Twitter {
+  background-image: url(data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2216%22%20viewBox%3D%220%200%2020%2016%22%3E%3Ctitle%3ETwitter%3C%2Ftitle%3E%3Cpath%20d%3D%22M20%201.9c-.7.3-1.5.5-2.4.6.8-.5%201.5-1.3%201.8-2.2-.8.5-1.7.8-2.6%201C16.1.5%2015%200%2013.8%200c-2.3%200-4.1%201.8-4.1%204%200%20.3%200%20.6.1.9C6.4%204.8%203.4%203.2%201.4.7%201%201.3.8%202%20.8%202.8c0%201.4.7%202.6%201.8%203.4-.6-.1-1.2-.3-1.8-.6%200%202%201.4%203.6%203.3%204-.3.1-.7.2-1.1.2-.3%200-.5%200-.8-.1.5%201.6%202%202.8%203.8%202.8-1.4%201.1-3.2%201.7-5.1%201.7-.3%200-.7%200-1-.1C1.8%2015.3%204%2016%206.3%2016%2013.8%2016%2018%209.8%2018%204.5V4c.8-.6%201.5-1.3%202-2.1%22%2F%3E%3C%2Fsvg%3E);
+}
+
+.svgstore--Social-Twitter {
+  padding-bottom: 16 / 20 * 100%;
+}
+
 $svgstore--arrow-left: url(data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2060.4%20103.5%22%3E%3Cpath%20d%3D%22M51.6%20103.5l8.8-8.8-42.9-42.9%2042.9-43L51.6%200%200%2051.7l.1.1H0%22%2F%3E%3C%2Fsvg%3E);
 
 %svgstore--arrow-left {
@@ -75,36 +125,6 @@ $svgstore--logo: url(data:image/svg+xml;charset=utf8,%3Csvg%20id%3D%22Layer_1%22
   padding-bottom: 25 / 133 * 100%;
 }
 
-$svgstore--M: url(data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20499.1%20462.4%22%3E%3Cpath%20d%3D%22M499%20.1v462H384V230.5L281%20389v1.1h-63V389L114.5%20229l.5%20233.1H0V.1h85.7l163.9%20246.8L413.4.1H499z%22%2F%3E%3C%2Fsvg%3E);
-
-%svgstore--M {
-  background-image: url(data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20499.1%20462.4%22%3E%3Cpath%20d%3D%22M499%20.1v462H384V230.5L281%20389v1.1h-63V389L114.5%20229l.5%20233.1H0V.1h85.7l163.9%20246.8L413.4.1H499z%22%2F%3E%3C%2Fsvg%3E);
-}
-
-.svgstore--M {
-  padding-bottom: 462 / 499 * 100%;
-}
-
-$svgstore--Medill_M: url(data:image/svg+xml;charset=utf8,%3Csvg%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20380%20347%22%3E%3Cstyle%3E.st0%7Bfill%3Anone%3Bstroke%3A%23000000%3Bstroke-width%3A100%3B%7D%3C%2Fstyle%3E%3Cpath%20class%3D%22st0%22%20d%3D%22M334.3%200v347.2%22%2F%3E%3Cpath%20d%3D%22M144.8%20314.6L94.9%20213.5%2095-.6%20189.7%20179%20284.3-1.3%20285%20212l-50.4%20102.6h-89.8z%22%2F%3E%3Cpath%20class%3D%22st0%22%20d%3D%22M45%20347.2V0%22%2F%3E%3C%2Fsvg%3E);
-
-%svgstore--Medill_M {
-  background-image: url(data:image/svg+xml;charset=utf8,%3Csvg%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20380%20347%22%3E%3Cstyle%3E.st0%7Bfill%3Anone%3Bstroke%3A%23000000%3Bstroke-width%3A100%3B%7D%3C%2Fstyle%3E%3Cpath%20class%3D%22st0%22%20d%3D%22M334.3%200v347.2%22%2F%3E%3Cpath%20d%3D%22M144.8%20314.6L94.9%20213.5%2095-.6%20189.7%20179%20284.3-1.3%20285%20212l-50.4%20102.6h-89.8z%22%2F%3E%3Cpath%20class%3D%22st0%22%20d%3D%22M45%20347.2V0%22%2F%3E%3C%2Fsvg%3E);
-}
-
-.svgstore--Medill_M {
-  padding-bottom: 347 / 380 * 100%;
-}
-
-$svgstore--Medill_Slash: url(data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20545.9%20539%22%3E%3Cpath%20d%3D%22M109.8%200H0v29.5L436.1%20539h109.8v-29.5%22%2F%3E%3C%2Fsvg%3E);
-
-%svgstore--Medill_Slash {
-  background-image: url(data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20545.9%20539%22%3E%3Cpath%20d%3D%22M109.8%200H0v29.5L436.1%20539h109.8v-29.5%22%2F%3E%3C%2Fsvg%3E);
-}
-
-.svgstore--Medill_Slash {
-  padding-bottom: 539 / 545 * 100%;
-}
-
 $svgstore--play: url(data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2272.6%22%20height%3D%2272.6%22%20viewBox%3D%220%200%2072.6%2072.6%22%3E%3Cpath%20d%3D%22M36.3%200C16.3%200%200%2016.2%200%2036.3s16.2%2036.3%2036.3%2036.3%2036.3-16.2%2036.3-36.3S56.3%200%2036.3%200zm19.8%2038.2L27.9%2054.5c-1.4.8-3.2-.2-3.2-1.9V20c0-1.6%201.8-2.7%203.2-1.9l28.2%2016.3c1.5.9%201.5%202.9%200%203.8z%22%2F%3E%3C%2Fsvg%3E);
 
 %svgstore--play {
@@ -123,24 +143,4 @@ $svgstore--quote: url(data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3
 
 .svgstore--quote {
   padding-bottom: 139 / 209 * 100%;
-}
-
-$svgstore--Social-LinkedIn: url(data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224.8%22%20height%3D%2222.6%22%20viewBox%3D%220%200%2024.8%2022.6%22%3E%3Cpath%20d%3D%22M5.9%202.7c0%201.5-1.1%202.7-3%202.7C1.1%205.3%200%204.1%200%202.7%200%201.1%201.2%200%203%200c1.7%200%202.8%201.1%202.9%202.7zM.6%2022.6h4.8V7.2H.6v15.4zM18.7%207.1c-2.8%200-4.5%201.5-4.8%202.6V7.2H8.4c.1%201.3%200%2015.3%200%2015.3h5.4v-8.3c0-.5%200-.9.1-1.3.4-.9%201.2-1.9%202.6-1.9%201.9%200%202.7%201.4%202.7%203.5v7.9h5.5V14c.1-4.7-2.6-6.9-6-6.9z%22%2F%3E%3C%2Fsvg%3E);
-
-%svgstore--Social-LinkedIn {
-  background-image: url(data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224.8%22%20height%3D%2222.6%22%20viewBox%3D%220%200%2024.8%2022.6%22%3E%3Cpath%20d%3D%22M5.9%202.7c0%201.5-1.1%202.7-3%202.7C1.1%205.3%200%204.1%200%202.7%200%201.1%201.2%200%203%200c1.7%200%202.8%201.1%202.9%202.7zM.6%2022.6h4.8V7.2H.6v15.4zM18.7%207.1c-2.8%200-4.5%201.5-4.8%202.6V7.2H8.4c.1%201.3%200%2015.3%200%2015.3h5.4v-8.3c0-.5%200-.9.1-1.3.4-.9%201.2-1.9%202.6-1.9%201.9%200%202.7%201.4%202.7%203.5v7.9h5.5V14c.1-4.7-2.6-6.9-6-6.9z%22%2F%3E%3C%2Fsvg%3E);
-}
-
-.svgstore--Social-LinkedIn {
-  padding-bottom: 22 / 24 * 100%;
-}
-
-$svgstore--Social-Twitter: url(data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2216%22%20viewBox%3D%220%200%2020%2016%22%3E%3Ctitle%3ETwitter%3C%2Ftitle%3E%3Cpath%20d%3D%22M20%201.9c-.7.3-1.5.5-2.4.6.8-.5%201.5-1.3%201.8-2.2-.8.5-1.7.8-2.6%201C16.1.5%2015%200%2013.8%200c-2.3%200-4.1%201.8-4.1%204%200%20.3%200%20.6.1.9C6.4%204.8%203.4%203.2%201.4.7%201%201.3.8%202%20.8%202.8c0%201.4.7%202.6%201.8%203.4-.6-.1-1.2-.3-1.8-.6%200%202%201.4%203.6%203.3%204-.3.1-.7.2-1.1.2-.3%200-.5%200-.8-.1.5%201.6%202%202.8%203.8%202.8-1.4%201.1-3.2%201.7-5.1%201.7-.3%200-.7%200-1-.1C1.8%2015.3%204%2016%206.3%2016%2013.8%2016%2018%209.8%2018%204.5V4c.8-.6%201.5-1.3%202-2.1%22%2F%3E%3C%2Fsvg%3E);
-
-%svgstore--Social-Twitter {
-  background-image: url(data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2216%22%20viewBox%3D%220%200%2020%2016%22%3E%3Ctitle%3ETwitter%3C%2Ftitle%3E%3Cpath%20d%3D%22M20%201.9c-.7.3-1.5.5-2.4.6.8-.5%201.5-1.3%201.8-2.2-.8.5-1.7.8-2.6%201C16.1.5%2015%200%2013.8%200c-2.3%200-4.1%201.8-4.1%204%200%20.3%200%20.6.1.9C6.4%204.8%203.4%203.2%201.4.7%201%201.3.8%202%20.8%202.8c0%201.4.7%202.6%201.8%203.4-.6-.1-1.2-.3-1.8-.6%200%202%201.4%203.6%203.3%204-.3.1-.7.2-1.1.2-.3%200-.5%200-.8-.1.5%201.6%202%202.8%203.8%202.8-1.4%201.1-3.2%201.7-5.1%201.7-.3%200-.7%200-1-.1C1.8%2015.3%204%2016%206.3%2016%2013.8%2016%2018%209.8%2018%204.5V4c.8-.6%201.5-1.3%202-2.1%22%2F%3E%3C%2Fsvg%3E);
-}
-
-.svgstore--Social-Twitter {
-  padding-bottom: 16 / 20 * 100%;
 }

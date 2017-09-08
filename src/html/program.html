@@ -26,7 +26,7 @@ title: Academic Program Page
     </div>
   </aside>
 
-  <div class="content-full">
+  <div class="content-full show-desktop">
     <div class="sidebar__right">
       <div class="sidebar__button__group">
         <a href="#" class="button">Apply Now</a>
@@ -376,5 +376,21 @@ title: Academic Program Page
   </div>
 </div>
 
+<div class="module">
+  <section class="content-full slider">
+    <div class="page">
+      <div class="align-text-center"><h2>Related Programs</h2></div>
+
+      {% include "modules/_slider.html" %}
+    </div>
+  </section>
+</div>
+<div class="content-full show-mobile">
+  <div class="sidebar__button__group">
+    <a href="#" class="button">Apply Now</a>
+    <a href="#" class="button">Request Information</a>
+    <a href="#" class="button">Contact Us</a>
+  </div>
+</div>
 <script type="text/javascript">document.getElementsByTagName('body')[0].setAttribute('class','standard-page wider-page');</script>
 {% endblock %}

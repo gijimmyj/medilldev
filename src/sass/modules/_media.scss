@@ -1,5 +1,6 @@
 .media {
   @include spacing(2);
+  display: table;
 }
 
 .media--narrow {
@@ -38,6 +39,8 @@
 
 .media__text {
   background: $ms-gray-light;
+  display: table-caption;
+  caption-side: bottom;
   padding: 1rem 1rem 0.5rem 0;
   p {
     margin: 0;

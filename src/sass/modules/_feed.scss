@@ -15,12 +15,8 @@
 
 .feed__item__content {
 	@include mq(64em) {
-		float: left;
-		width: calc(100% - 26rem);
 		padding-right: 1rem;
 		.feed__item--small & {
-			float: left;
-			width: calc(100% - 18rem);
 			padding-right: 1rem;
 		}
 		.feed__item--imageless & {
@@ -64,9 +60,19 @@
 
 .feed__item__img {
 	overflow: hidden;
-	margin-top: 1rem;
+	margin-bottom: 1rem;
 	@include mq(64em) {
-		margin-top: 0;
+		margin-bottom: 0;
+		float: right;
+    	max-width: 26rem;
+    	width: calc(100% - 46rem);
+	}
+}
+
+.feed__item--small .feed__item__img {
+	width: 100%;
+	@include mq(64em) {
+	    width: calc(100% - 31rem);
 	}
 }
 

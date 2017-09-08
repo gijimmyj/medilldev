@@ -18,6 +18,9 @@ if (Modernizr.touchevents) {
   jQuery('body').addClass('no-touch');
 }
 
+// object-fit polyfill
+var objectFitImages = require('object-fit-images');
+objectFitImages();
 
 require('swiper');
 

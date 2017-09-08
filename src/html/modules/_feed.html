@@ -2,6 +2,11 @@
 
 <div class="feed{% if feed.contentSmall %} feed__item--small{% endif %}{% if not feed.image %} feed__item--imageless{% endif %}">
   <div class="feed__item">
+    {% if feed.image %}
+    <div class="feed__item__img">
+      <a href="#"><img src="//satyr.io/600x16:9" alt="placeholder"></a>
+    </div>
+    {% endif %}
     <div class="feed__item__content">
       <div class="feed__item__content--title">
         <a href="#">MSJ student reports on LGBT and women's rights in South Africa</a>
@@ -19,11 +24,6 @@
       {% endif %}
       </div>
     </div>
-    {% if feed.image %}
-    <div class="feed__item__img">
-      <a href="#"><img src="//satyr.io/600x16:9" alt="placeholder"></a>
-    </div>
-    {% endif %}
   </div>
 </div>
 
@@ -31,6 +31,11 @@
 
 <div class="feed{% if feed.contentSmall %} feed__item--small{% endif %}{% if not feed.image %} feed__item--imageless{% endif %}">
   <div class="feed__item">
+    {% if feed.image %}
+    <div class="feed__item__img">
+      <a href="#"><img src="//satyr.io/600x16:9" alt="placeholder"></a>
+    </div>
+    {% endif %}
     <div class="feed__item__content">
       <div class="feed__item__content--title">
         <a href="#">MSJ student reports on LGBT and women's rights in South Africa</a>
@@ -48,11 +53,7 @@
       {% endif %}
       </div>
     </div>
-    {% if feed.image %}
-    <div class="feed__item__img">
-      <a href="#"><img src="//satyr.io/600x16:9" alt="placeholder"></a>
-    </div>
-    {% endif %}
+    
   </div>
 </div>
 

@@ -1,9 +1,10 @@
 jQuery(function($) {
 
   var swipers = [];
-  $( ".swiper-container" ).each(function( index ) {
-    var next_button = $('.swiper-button-next:eq('+index+')');
-    var prev_button = $('.swiper-button-prev:eq('+index+')');
+  $( ".swiper-container" ).each(function(index, element) {
+    $(this).addClass('s'+index);
+    var next_button = $('.s'+index+' .swiper-button-next');
+    var prev_button = $('.s'+index+' .swiper-button-prev');
     var container = $(this);
     swipers.push(new Swiper(
       this, {
@@ -18,19 +19,20 @@ jQuery(function($) {
         firstSlideMessage: 'This is the first slide',
         lastSlideMessage: 'This is the last slide',
         onInit: function(swiper) {
-          container.on('click', '.refresh-button', function() {
+          $('.s'+index+' .refresh-button').on('click', function() {
             swiper.slideTo(0);
           });
         },
         onSlideChangeEnd: function(swiper) {
           if (swiper.isEnd) {
-            $('.refresh-button').css({
+            $('.s'+index+' .refresh-button').css({
               "display": "block",
               "visibility": "visible"
             });
+            $('.s'+index+' .refresh-button').removeClass('swiper-button-disabled');
           }
           else {
-            $('.refresh-button').css({
+            $('.s'+index+' .refresh-button').css({
               "display": "none",
               "visibility": "hidden"
             });
