@@ -88,6 +88,10 @@
 
 .feed__card {
 	text-align: left;
+	.feed__item__img {
+    	width: 100%;
+    	float: none;
+    }
 }
 
 .feed__card__content--title {
