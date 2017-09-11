@@ -64,7 +64,6 @@
 	@include mq(64em) {
 		margin-bottom: 0;
 		float: right;
-    	max-width: 26rem;
     	width: calc(100% - 46rem);
 	}
 }
