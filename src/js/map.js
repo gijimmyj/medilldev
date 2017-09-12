@@ -268,7 +268,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
       if (_l.linkText !== undefined) {
         linkText = _l.linkText;
       }
-      _el.append('<a class="button__link" href="' + _l.link + '"' + target + '>' + linkText + '</a>');
+      _el.append('<a class="button__link" href="' + _l.linkUrl + '"' + target + '>' + linkText + '</a>');
     }
     if ($('.mobile-nav-link').is(":visible") && !init) {
       $('#info-canvas').goTo().focus();
