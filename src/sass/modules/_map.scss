@@ -118,6 +118,16 @@
   display: table-cell;
   vertical-align: middle;
   padding: 5rem 3rem 3rem;
+  a {
+    color: $white;
+    text-decoration: underline;
+    font-weight: bold;
+    &:hover {
+      background: none;
+      text-decoration: underline;
+      font-weight: normal;
+    }
+  }
   @include mq(48em) {
     padding: 1rem 3rem;
   }
