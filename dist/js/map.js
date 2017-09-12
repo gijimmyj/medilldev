@@ -223,7 +223,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
       marker.setIcon(imageActive);
       marker.setClickable(false);
       map.setCenter(marker.getPosition());
-      map.setZoom(17);
+      map.setZoom(14);
     }
     setActive(marker); // callback
   }
