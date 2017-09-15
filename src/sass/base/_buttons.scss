@@ -7,7 +7,7 @@
   text-align: center;
   text-decoration: none;
   font-weight: normal;
-  margin-bottom: 0em;
+  margin-bottom: 0;
   padding: .8em 1em .7em 1em;
   cursor: pointer;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -27,6 +27,14 @@
     text-decoration: none;
     background-color: $ms-purple-dark;
   }
+}
+
+
+@media screen and (max-width: 1024px) {
+  .main-content a.button, .mid-content a.button, .mid-content-full a.button, .mid-content p.button a, .content a.button, .content-full a.button, .content p.button a, .content-full p.button a, .hero a.button, #top-nav ul li a.button, .tl-slideshow a.button, input[type="submit"]  {
+      margin-bottom: 1em;
+    }
+
 }
 
 .button {
@@ -148,5 +156,5 @@
 .no-underline {
   text-decoration:none !important;
   background:none !important;
-  cursor: default;           
+  cursor: default;
 }
