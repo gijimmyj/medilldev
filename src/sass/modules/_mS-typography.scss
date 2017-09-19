@@ -1,9 +1,12 @@
 // headers
 h1 {
-  font: 36px/40px $CamptonBook;
+  font: 32px/38px $CamptonBook;
   margin-bottom: 1rem;
   color: $nu-purple;
   word-wrap: break-word;
+  @include mq(32em) {
+    font: 36px/40px $CamptonBook;
+  }
   @include mq(48em) {
     font: 52px/62px $CamptonBook;
   }
@@ -11,9 +14,12 @@ h1 {
 }
 
 h2 {
-  font: 32px/38px $CamptonBook;
+  font: 30px/34.2px $CamptonBook;
   color: $nu-purple;
   margin-bottom: 1rem;
+  @include mq(32em) {
+    font: 32px/38px $CamptonBook;
+  }
   @include mq(48em) {
     font: 40px/48px $CamptonBook;
   }

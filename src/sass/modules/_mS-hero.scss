@@ -121,12 +121,16 @@
   color: $white;
   text-shadow: 0px 1px 4.5px rgba(0, 0, 0, 0.3);
   left: 50%;
-  top: 60%;
-  transform: translate(-50%, -60%);
+  top: 50%;
+  transform: translate(-50%, -50%);
   z-index: 2;
   padding: 0 1rem;
   font-size: 3.765rem;
   opacity: 0;
+  @include mq(48em) {
+    top: 60%;
+    transform: translate(-50%, -60%);
+  }
   @include mq(66.250em) {
     font-size: 4.706rem
   }
@@ -203,6 +207,7 @@
 
 
 .home__hero__container {
+  height: 80vh;
   height: calc(100vh - 133px);
   background-size: cover;
   background-position: top;
