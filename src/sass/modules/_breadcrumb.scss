@@ -9,7 +9,7 @@ ul#breadcrumbs {
     min-height: 30px;
 
     li {
-        display: inline;
+        display: inline-block;
         position: relative;
         background-image: none;
         padding-right: 1rem;
@@ -20,7 +20,7 @@ ul#breadcrumbs {
             @include fill($svgstore--arrow-right, $ms-purple);
             background-repeat: no-repeat;
             width: .5rem;
-            height: 60%;
+            height: .5rem;
             right: 0;
             top: 50%;
             transform: translateY(-50%);
