@@ -14,18 +14,18 @@ ul#breadcrumbs {
         background-image: none;
         padding-right: 1rem;
         margin-right: 0.5rem;
-        &:after {
+        &:before {
             position: absolute;
             content: '';
             @include fill($svgstore--arrow-right, $ms-purple);
             background-repeat: no-repeat;
+            background-position: 0 0;
             width: .5rem;
             height: .5rem;
             left: -.85rem;
-            bottom: 0;
-            transform: translateY(-50%);
+            top: 0.125rem;
         }
-        &:first-child:after {
+        &:first-child:before {
             background-image: none;
         }
         &.active {
