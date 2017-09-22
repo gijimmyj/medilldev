@@ -68,7 +68,7 @@ module.exports = {
     src: 'src/sass/**/*.scss',
     dist: 'dist/css',
     autoprefixer: {
-      browsers: ['> 1%', 'last 3 versions', 'Firefox ESR', 'IE >= 9'],
+      browsers: ['> 1%', 'last 3 versions', 'iOS 8', 'Firefox ESR', 'IE >= 9'],
       cascade: false
     },
     cssnano: {
