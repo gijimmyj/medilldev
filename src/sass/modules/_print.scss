@@ -1,0 +1,98 @@
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+    
+    .standard-page .left-nav, .hero__container--alt, 
+    .hero__container, header, footer, #top-nav, .sidebar__right,
+    #breadcrumbs, .news__events__category__container, iframe,
+    .media__embed--medium, .media__embed {
+      display: none !important;
+    }
+
+    .standard-page .content, #main-content {
+        width: 100%;
+    }
+
+    .mid-content {
+      float: none;
+      margin-right: 0;
+      padding-right: 0;
+    }
+
+    .block__item--animate {
+      opacity: 1;
+    }
+
+    .expander > div {
+      display: block !important;
+    }
+
+    .faculty-headshot {
+      max-width: 330px;
+    }
+
+}
