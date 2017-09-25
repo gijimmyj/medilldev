@@ -212,17 +212,17 @@ a.photo-hover:hover { // adds hover to large images with this class on the ancho
 
 // adds icons to matched file type
 a[href$=".pdf"], a[href$=".PDF"], a.pdf {
-    padding-right: 1rem;
+    //padding-right: 1rem;
     background: url("#{$path-images}/icons/pdf.png") no-repeat right center;
 }
 
 a[href$=".docx"], a[href$=".DOCX"], a.docx, a[href$=".doc"], a[href$=".DOC"], a.doc {
-    padding-right: 1rem;
+    //padding-right: 1rem;
     background: url("#{$path-images}/icons/word.png") no-repeat right center;
 }
 
 a[href$=".xlsx"], a[href$=".XLSX"], a.xlsx, a[href$=".xls"], a[href$=".XLS"], a.xls {
-    padding-right: 1rem;
+    //padding-right: 1rem;
     background: url("#{$path-images}/icons/excel.png") no-repeat right center;
 }
 
