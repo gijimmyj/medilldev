@@ -7,6 +7,7 @@
                                    http://www.sanbeiji.com/archives/953 */
         box-shadow: none !important;
         text-shadow: none !important;
+        transform: none !important;
     }
 
     a,
@@ -14,7 +15,7 @@
         text-decoration: underline;
     }
 
-    a[href]:after {
+    a[href]:not(.button__tag):after {
         content: " (" attr(href) ")";
     }
 
@@ -51,6 +52,7 @@
 
     tr,
     img {
+        display: block;
         page-break-inside: avoid;
     }
 
@@ -62,19 +64,44 @@
     }
 
     h2,
-    h3 {
+    h3,
+    .module {
         page-break-after: avoid;
     }
     
     .standard-page .left-nav, .hero__container--alt, 
     .hero__container, header, footer, #top-nav, .sidebar__right,
     #breadcrumbs, .news__events__category__container, iframe,
-    .media__embed--medium, .media__embed {
+    .media__embed--medium, .media__embed, .tL, .tR, 
+    .bL, .bR, .swiper-container, .slider, .show-mobile {
       display: none !important;
+    }
+
+    .parallax__container__first {
+        margin-bottom: 20px !important;
+    }
+
+    .banner__wrap {
+        padding-bottom: 0;
+    }
+
+    .banner__content {
+        position: relative;
+        top: auto;
+        transform: none;
     }
 
     .standard-page .content, #main-content {
         width: 100%;
+    }
+
+    .tweet__img {
+        margin: 0;
+        display: block;
+        position: relative;
+        top: auto;
+        left: 0;
+        transform: none;
     }
 
     .mid-content {
