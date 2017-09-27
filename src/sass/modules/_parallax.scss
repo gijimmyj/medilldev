@@ -7,51 +7,7 @@
   @include mq(64em) {
     padding: 8rem 0 0rem;
   }
-  &:before,
-  &:after {
-    position: absolute;
-    content: '';
-  }
-
-  &:before {
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 65%;
-    background: rgba($white, .85);
-    @include mq(32em) {
-      height: 60%;
-    }
-
-    @include mq(48em) {
-      height: 55%;
-    }
-
-    @include mq(54.688em) {
-      height: 75%;
-    }
-
-  }
-
-  &:after {
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 35%;
-    background: rgba($ms-purple-dark, .85);
-    @include mq(32em) {
-      height: 40%;
-    }
-
-    @include mq(48em) {
-      height: 45%;
-    }
-
-    @include mq(54.688em) {
-      height: 25%;
-    }
-
-  }
+  
   .no-touch & {
     background-attachment: local;
   }
@@ -81,8 +37,9 @@
 
 .parallax__container__second {
   padding: 2rem 0;
+  background: rgba($ms-purple-dark, .85);
   @include mq(64em) {
-    padding: 0 0 3rem;
+    padding: 3rem 0;
   }
 }
 
