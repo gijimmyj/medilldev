@@ -63,6 +63,10 @@
         widows: 3;
     }
 
+    @page {
+        size: auto;
+    }
+
     h2,
     h3,
     .module {
@@ -73,7 +77,9 @@
     .hero__container, header, footer, #top-nav, .sidebar__right,
     #breadcrumbs, .news__events__category__container, iframe,
     .media__embed--medium, .media__embed, .tL, .tR, 
-    .bL, .bR, .swiper-container, .slider, .show-mobile {
+    .bL, .bR, .swiper-container, .slider, .show-mobile, .tweet__img, 
+    .blockquote__no-img, .blockquote__twitter__icon, svg,
+    .module__arrow,.pagination, .button__tag {
       display: none !important;
     }
 
@@ -120,6 +126,33 @@
 
     .faculty-headshot {
       max-width: 330px;
+    }
+
+    .module__tabs .module__content__list__item {
+        text-align: left;
+        margin: 0;
+        padding: 0;
+    }
+
+    .module__content > div {
+        display: block !important;
+    }
+
+    .feed__card__content--title a {
+        background: none;
+        font-size: 20px;
+    }
+
+    .feed__card__content--title {
+        line-height: .65;
+    }
+
+    .feature-three-col {
+        display: block !important;
+    }
+
+    html, body {
+        height: auto;
     }
 
 }
